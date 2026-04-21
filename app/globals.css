@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — trustworthy deep teal with a fresh mint accent.
+     Swap hex values here to match the real logo when available. */
+  --color-brand-50:  #f1f7f7;
+  --color-brand-100: #d8ebec;
+  --color-brand-200: #b3d6d9;
+  --color-brand-300: #84b9bf;
+  --color-brand-400: #549ba3;
+  --color-brand-500: #357f88;
+  --color-brand-600: #29666e;
+  --color-brand-700: #204f56;
+  --color-brand-800: #143840;
+  --color-brand-900: #0b2a30;
+
+  --color-accent-300: #8edbc1;
+  --color-accent-400: #6ec8a7;
+  --color-accent-500: #4bb28c;
+  --color-accent-600: #369174;
+
+  --color-ink-900: #0e1a1d;
+  --color-ink-700: #2f3d41;
+  --color-ink-500: #5a6a6e;
+  --color-ink-300: #94a3a7;
+
+  --color-surface-0:  #ffffff;
+  --color-surface-50: #f8faf9;
+  --color-surface-100:#eef3f2;
+  --color-surface-200:#dde6e5;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-surface-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Consistent rounded focus ring across interactive elements */
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
