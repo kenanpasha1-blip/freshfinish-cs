@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="mb-4">
-            <Logo width={180} variant="light" />
+            <Logo height={56} variant="light" />
           </div>
           <p className="text-sm text-brand-200 leading-relaxed">
             Professional end of tenancy, deep, after-build, domestic and
