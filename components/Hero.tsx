@@ -22,8 +22,8 @@ export default function Hero({
   secondaryCta,
   trustChips,
   image = {
-    src: "/images/hero/hero-home.jpg",
-    alt: "A bright, freshly cleaned home interior",
+    src: "/images/hero/hero-pro-cleaner.jpg",
+    alt: "A professional Fresh Finish cleaner in uniform wiping a wooden table with a microfiber cloth",
   },
 }: Props) {
   return (

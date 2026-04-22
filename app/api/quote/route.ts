@@ -1,22 +1,15 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+import { site } from "@/lib/site";
+import { services } from "@/lib/services";
 
 /**
- * Quote form endpoint.
+ * Quote form endpoint — validates input, sends an email via Resend.
  *
- * Right now this just validates and logs the submission. To actually
- * deliver enquiries, plug in an email provider such as Resend, SendGrid
- * or Postmark below. Keep secrets in environment variables, not in code.
- *
- * Minimal Resend example (after `npm install resend`):
- *
- *   import { Resend } from "resend";
- *   const resend = new Resend(process.env.RESEND_API_KEY);
- *   await resend.emails.send({
- *     from: "Fresh Finish <noreply@freshfinish-cs.co.uk>",
- *     to: process.env.QUOTE_FORM_TO_EMAIL!,
- *     subject: `New enquiry — ${data.name}`,
- *     text: JSON.stringify(data, null, 2),
- *   });
+ * Env vars required in .env.local and in your Vercel project settings:
+ *   - RESEND_API_KEY        (from https://resend.com/api-keys)
+ *   - QUOTE_FORM_TO_EMAIL   (where enquiries are delivered, e.g. info@freshfinish-cs.co.uk)
+ *   - QUOTE_FORM_FROM_EMAIL (optional — defaults to Resend's onboarding address)
  */
 
 export const runtime = "nodejs";
@@ -30,9 +23,35 @@ type Payload = {
   location?: string;
   preferred_date?: string;
   message?: string;
-  /** Honeypot — bots fill, humans don't. */
+  /** Honeypot — bots fill it, humans don't. */
   company?: string;
 };
+
+function labelFor(kind: "service" | "property", value?: string) {
+  if (!value) return "(not provided)";
+  if (kind === "service") {
+    return services.find((s) => s.slug === value)?.name ?? value;
+  }
+  const properties: Record<string, string> = {
+    studio: "Studio",
+    "1-bed": "1-bedroom flat",
+    "2-bed": "2-bedroom flat or house",
+    "3-bed": "3-bedroom property",
+    "4-bed-plus": "4+ bedroom property",
+    "office-small": "Small office",
+    other: "Other",
+  };
+  return properties[value] ?? value;
+}
+
+function escapeHtml(s: string) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
 
 export async function POST(req: Request) {
   let data: Payload;
@@ -45,13 +64,11 @@ export async function POST(req: Request) {
     );
   }
 
-  // Spam check
+  // Spam honeypot — silently accept so the bot thinks it worked.
   if (data.company && data.company.length > 0) {
-    // Pretend success to avoid signalling to the bot.
     return NextResponse.json({ ok: true });
   }
 
-  // Basic validation
   const required: (keyof Payload)[] = [
     "name",
     "email",
@@ -69,12 +86,87 @@ export async function POST(req: Request) {
     }
   }
 
-  // Log so you can see submissions in Vercel logs during setup.
-  // Replace with a real email/CRM integration when ready.
-  console.log("[quote] new enquiry", {
-    ...data,
-    receivedAt: new Date().toISOString(),
-  });
+  const apiKey = process.env.RESEND_API_KEY;
+  const toEmail = process.env.QUOTE_FORM_TO_EMAIL || site.contact.email;
+  const fromEmail =
+    process.env.QUOTE_FORM_FROM_EMAIL ||
+    "Fresh Finish Website <onboarding@resend.dev>";
+
+  if (!apiKey) {
+    console.error("[quote] RESEND_API_KEY is not set — enquiry not delivered");
+    console.log("[quote] enquiry payload:", data);
+    return NextResponse.json(
+      { ok: false, error: "Email service not configured" },
+      { status: 500 }
+    );
+  }
+
+  const resend = new Resend(apiKey);
+
+  const subject = `New enquiry — ${data.name} (${labelFor("service", data.service)})`;
+
+  const rows: [string, string][] = [
+    ["Name", data.name!],
+    ["Phone", data.phone!],
+    ["Email", data.email!],
+    ["Service", labelFor("service", data.service)],
+    ["Property size/type", labelFor("property", data.property)],
+    ["Location/postcode", data.location!],
+    ["Preferred date", data.preferred_date || "(not provided)"],
+    ["Message", data.message?.trim() || "(no message)"],
+  ];
+
+  const text =
+    `New enquiry from the Fresh Finish website\n\n` +
+    rows.map(([k, v]) => `${k}: ${v}`).join("\n") +
+    `\n\n---\nSent via freshfinish-cs.co.uk`;
+
+  const html = `
+  <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px;">
+    <div style="border-left: 4px solid #07bce5; padding-left: 16px; margin-bottom: 24px;">
+      <h1 style="color: #06455b; font-size: 20px; margin: 0;">New enquiry</h1>
+      <p style="color: #566a74; margin: 4px 0 0; font-size: 14px;">Via freshfinish-cs.co.uk</p>
+    </div>
+    <table style="width:100%; border-collapse: collapse;">
+      ${rows
+        .map(
+          ([k, v]) => `
+        <tr>
+          <td style="padding: 10px 0; border-bottom: 1px solid #eef3f6; color: #566a74; font-size: 13px; width: 160px; vertical-align: top;">${escapeHtml(k)}</td>
+          <td style="padding: 10px 0; border-bottom: 1px solid #eef3f6; color: #0b1c22; font-size: 14px;">${escapeHtml(v)}</td>
+        </tr>`
+        )
+        .join("")}
+    </table>
+    <p style="margin-top: 24px; color: #566a74; font-size: 13px;">
+      Reply directly to this email to respond to <strong>${escapeHtml(data.name!)}</strong>.
+    </p>
+  </div>`;
+
+  try {
+    const { error } = await resend.emails.send({
+      from: fromEmail,
+      to: [toEmail],
+      replyTo: data.email,
+      subject,
+      text,
+      html,
+    });
+
+    if (error) {
+      console.error("[quote] Resend error:", error);
+      return NextResponse.json(
+        { ok: false, error: "Failed to send enquiry" },
+        { status: 502 }
+      );
+    }
+  } catch (err) {
+    console.error("[quote] Unexpected error:", err);
+    return NextResponse.json(
+      { ok: false, error: "Unexpected error" },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({ ok: true });
 }

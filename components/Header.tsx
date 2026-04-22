@@ -20,8 +20,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-surface-200">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <Logo height={46} priority />
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+        <Logo height={80} priority />
 
         <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-ink-700">
           {nav.map((item) => (
