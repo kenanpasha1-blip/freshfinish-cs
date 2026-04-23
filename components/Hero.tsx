@@ -106,21 +106,6 @@ export default function Hero({
                 className="absolute inset-0 bg-gradient-to-tr from-brand-900/10 via-transparent to-accent-500/10"
               />
             </div>
-
-            {/* Floating satisfaction badge */}
-            <div className="absolute -bottom-5 left-4 right-4 sm:left-auto sm:-bottom-6 sm:-left-6 sm:right-auto sm:max-w-xs bg-white rounded-2xl shadow-lg shadow-brand-900/10 border border-surface-100 p-4 flex items-start gap-3">
-              <span className="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-accent-500/10 text-accent-600">
-                <Icon name="shield-check" size={22} />
-              </span>
-              <div>
-                <p className="text-sm font-semibold text-brand-900">
-                  48-hour return policy
-                </p>
-                <p className="text-xs text-ink-500 mt-0.5 leading-relaxed">
-                  If anything's missed, we come back and put it right.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

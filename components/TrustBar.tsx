@@ -1,11 +1,10 @@
 import Icon, { type IconName } from "./Icon";
-import { site } from "@/lib/site";
 
 const items: { icon: IconName; label: string; sub: string }[] = [
   {
     icon: "shield-check",
-    label: `${site.trust.returnWindowHours}-hour return policy`,
-    sub: "If it's missed, we put it right",
+    label: "Trained, insured team",
+    sub: "Professional-grade kit, not a generic spray bottle",
   },
   {
     icon: "star",

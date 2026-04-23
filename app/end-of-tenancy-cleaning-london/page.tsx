@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
-import Satisfaction from "@/components/Satisfaction";
 import AreasCovered from "@/components/AreasCovered";
 import FAQ from "@/components/FAQ";
 import CTASection from "@/components/CTASection";
@@ -24,7 +23,7 @@ export const metadata: Metadata = buildMetadata({
   title:
     "End of Tenancy Cleaning London — Professional Move-Out Cleaners",
   description:
-    "Professional end of tenancy cleaning across London. Check-out ready standard, per-property quotes, 48-hour return policy. Trusted by tenants, landlords and letting agents.",
+    "Professional end of tenancy cleaning across London. Check-out ready standard, per-property quotes, trained insured team. Trusted by tenants, landlords and letting agents.",
   path: PATH,
 });
 
@@ -87,7 +86,7 @@ export default function Page() {
           serviceJsonLd({
             name: "End of Tenancy Cleaning London",
             description:
-              "Professional end of tenancy cleaning in London. Inventory-standard clean with a 48-hour return policy.",
+              "Professional end of tenancy cleaning in London. Inventory-standard clean by a trained, insured team.",
             url: `${site.url}${PATH}`,
             serviceType: "End of Tenancy Cleaning",
           }),
@@ -102,7 +101,7 @@ export default function Page() {
       <PageHero
         eyebrow="End of tenancy cleaning · London"
         heading="Professional end of tenancy cleaning in London"
-        intro="Move-out cleaning built around letting-agent and landlord standards — so you, your tenant or your client can close out the tenancy with confidence. Per-property pricing, real reviews, and a 48-hour return policy if anything's missed."
+        intro="Move-out cleaning built around letting-agent and landlord standards — so you, your tenant or your client can close out the tenancy with confidence. Per-property pricing, a trained insured team, and real five-star reviews from London customers."
         breadcrumbs={[
           { href: "/", label: "Home" },
           { label: "End of Tenancy Cleaning London" },
@@ -161,7 +160,6 @@ export default function Page() {
                 "Full check-out-ready clean",
                 "Per-property pricing — no hourly surprises",
                 "Trained, professional team",
-                "48-hour satisfaction return policy",
                 "Work to agent/inventory checklists on request",
                 "Bookings reviewed and confirmed before final",
               ].map((i) => (
@@ -272,7 +270,7 @@ export default function Page() {
           {[
             {
               title: "For tenants",
-              body: "You want your deposit back. We clean to the standard that gets it back — and if your agent flags something, tell us within 48 hours and we return to fix it. No stress on move-out day.",
+              body: "You want your deposit back. We clean to the standard that gets it back — and if your agent genuinely flags something we've missed, we'll come back and put it right. No stress on move-out day.",
             },
             {
               title: "For landlords",
@@ -326,7 +324,7 @@ export default function Page() {
               },
               {
                 t: "We stand behind the work",
-                b: `${site.trust.returnWindowHours}-hour return policy if anything's missed — in writing.`,
+                b: "Every job finishes with a final walk-through. If something's genuinely been missed, we'll come back and put it right.",
               },
               {
                 t: "Real reviews, real before-and-afters",
@@ -344,8 +342,6 @@ export default function Page() {
           </ul>
         </div>
       </Section>
-
-      <Satisfaction />
 
       <AreasCovered
         heading="End of tenancy cleaning across London"

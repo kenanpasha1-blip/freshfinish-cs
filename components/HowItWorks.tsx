@@ -18,8 +18,8 @@ const steps = [
   },
   {
     n: "04",
-    title: "You sign off — backed by our return policy",
-    body: "Walk through with us, or have your landlord or agent inspect. Anything missed? Let us know within 48 hours and we'll come back.",
+    title: "Final walk-through before we leave",
+    body: "We walk the property with you, your landlord or your agent to make sure everything's been done properly before we call the job finished.",
   },
 ];
 

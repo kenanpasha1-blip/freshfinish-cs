@@ -250,7 +250,7 @@ export default function Page() {
 
       <CTASection
         heading="Rather not scrub the oven yourself?"
-        body="We do this every day, in London, to agent-pass standard — with a 48-hour return policy if anything's missed. Send us a few details and we'll come back with a quote."
+        body="We do this every day, in London, to agent-pass standard — trained cleaners, professional-grade kit, real five-star Google reviews. Send us a few details and we'll come back with a quote."
       />
     </>
   );

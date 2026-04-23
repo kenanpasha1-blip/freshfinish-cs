@@ -4,7 +4,6 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
 import AreasCovered from "@/components/AreasCovered";
-import Satisfaction from "@/components/Satisfaction";
 import Icon from "@/components/Icon";
 import StructuredData from "@/components/StructuredData";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
@@ -15,7 +14,7 @@ const PATH = "/about";
 export const metadata: Metadata = buildMetadata({
   title: "About Fresh Finish Cleaning Solutions",
   description:
-    "Fresh Finish Cleaning Solutions is a professional, London-focused cleaning company — known for reliability, transparent pricing and our 48-hour satisfaction return policy.",
+    "Fresh Finish Cleaning Solutions is a professional, London-focused cleaning company — known for reliability, transparent per-property pricing and genuine five-star reviews.",
   path: PATH,
 });
 
@@ -52,8 +51,8 @@ export default function Page() {
             <p>
               That shows up in small ways. We answer the phone. We turn up
               on time. We quote per property so there's no meter running.
-              And if anything's missed, we come back within 48 hours and
-              put it right — no fuss.
+              And we stand behind the work — if something genuinely isn't
+              right, we'll put it right.
             </p>
             <p>
               Our focus is end of tenancy and deep cleaning, but we also
@@ -88,7 +87,7 @@ export default function Page() {
                 },
                 {
                   t: "Right-first-time standard",
-                  b: `Backed by a ${site.trust.returnWindowHours}-hour return policy if anything's missed.`,
+                  b: "Trained cleaners, professional-grade products, and a final walk-through before we leave the property.",
                 },
                 {
                   t: "Easy to work with",
@@ -123,7 +122,6 @@ export default function Page() {
         </div>
       </Section>
 
-      <Satisfaction />
       <AreasCovered />
 
       <CTASection

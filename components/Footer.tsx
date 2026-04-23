@@ -16,8 +16,8 @@ export default function Footer() {
           </div>
           <p className="text-sm text-brand-200 leading-relaxed">
             Professional end of tenancy, deep, after-build, domestic and
-            office cleaning across London. Reviewed, confirmed bookings with
-            a 48-hour satisfaction return policy.
+            office cleaning across London. Trained, insured team, per-property
+            pricing, and bookings reviewed before they're confirmed.
           </p>
           <div className="mt-6 flex items-center gap-3">
             <a

@@ -75,8 +75,8 @@ export default function Page() {
               Our positioning isn't the cheapest in London. We're priced where
               professional, reliable, insured local cleaning should be priced.
               The trade-off: a clean that actually holds up to a check-out
-              inspection, and a team that comes back within 48 hours if
-              anything's been missed.
+              inspection, carried out by a trained team using professional-grade
+              products.
             </p>
           </div>
 
@@ -170,9 +170,9 @@ export default function Page() {
             </div>
             <div className="rounded-xl bg-brand-800/60 border border-brand-700 p-5 text-sm text-brand-100 space-y-2.5">
               <p className="flex gap-2"><Icon name="check" size={16} className="text-accent-400 mt-0.5" /> Per-property pricing</p>
-              <p className="flex gap-2"><Icon name="check" size={16} className="text-accent-400 mt-0.5" /> 48-hour return policy</p>
               <p className="flex gap-2"><Icon name="check" size={16} className="text-accent-400 mt-0.5" /> Agent-checklist-friendly</p>
               <p className="flex gap-2"><Icon name="check" size={16} className="text-accent-400 mt-0.5" /> Insured, professional team</p>
+              <p className="flex gap-2"><Icon name="check" size={16} className="text-accent-400 mt-0.5" /> Real five-star Google reviews</p>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ export const site = {
   legalName: "Fresh Finish Cleaning Solutions",
   tagline: "Professional cleaning across London and the Home Counties",
   description:
-    "Fresh Finish Cleaning Solutions delivers professional end of tenancy, deep, after-build, domestic and office cleaning across London, with selected coverage in Hertfordshire and Essex. Reliable, high-standard, with a 48-hour return policy if anything's missed.",
+    "Fresh Finish Cleaning Solutions delivers professional end of tenancy, deep, after-build, domestic and office cleaning across London, with selected coverage in Hertfordshire and Essex. Trained, insured team, per-property pricing and real five-star Google reviews.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://freshfinish-cs.co.uk",
   locale: "en_GB",
 

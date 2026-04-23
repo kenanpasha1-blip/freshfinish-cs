@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ServicesOverview from "@/components/ServicesOverview";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Satisfaction from "@/components/Satisfaction";
 import AreasCovered from "@/components/AreasCovered";
 import HowItWorks from "@/components/HowItWorks";
 import Reviews from "@/components/Reviews";
@@ -17,7 +16,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: `${site.name} — Professional Cleaning Across London`,
   description:
-    "Professional end of tenancy, deep, after-build, domestic and office cleaning across London. Trusted local team, 48-hour return policy, real five-star Google reviews.",
+    "Professional end of tenancy, deep, after-build, domestic and office cleaning across London. Trained, insured team, per-property pricing and real five-star Google reviews.",
   path: "/",
   suffix: false,
 });
@@ -32,10 +31,10 @@ export default function HomePage() {
       <Hero
         eyebrow="London cleaning specialists"
         heading="Professional cleaning, done properly — first time."
-        subheading="End of tenancy, deep, after-build, domestic and office cleaning across London. Reliable team, clear per-property pricing, and a 48-hour return policy if anything's missed."
+        subheading="End of tenancy, deep, after-build, domestic and office cleaning across London. Trained, insured team, clear per-property pricing, and genuine five-star reviews from real London customers."
         trustChips={[
-          "48-hour satisfaction return",
           "Real five-star Google reviews",
+          "Trained, insured team",
           "London-focused coverage",
           "Quotes reviewed before confirmed",
         ]}
@@ -46,8 +45,6 @@ export default function HomePage() {
       <ServicesOverview />
 
       <WhyChooseUs />
-
-      <Satisfaction />
 
       <AreasCovered />
 

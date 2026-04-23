@@ -4,8 +4,8 @@ import Section from "./Section";
 const points: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "shield-check",
-    title: "48-hour return policy",
-    body: "If anything's been missed or isn't up to standard, tell us within 48 hours of the clean and we'll come back and put it right — no arguing, no back-and-forth.",
+    title: "Trained, professional team",
+    body: "Every clean is carried out by trained cleaners using professional-grade products and equipment — not a passing handyman with a generic spray bottle.",
   },
   {
     icon: "star",
@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
           Why Fresh Finish
         </p>
         <h2 className="mt-2 text-3xl md:text-4xl font-bold text-brand-900">
-          A professional standard, backed by a real return policy
+          A professional cleaning standard you can actually verify
         </h2>
         <p className="mt-4 text-lg text-ink-700">
           You shouldn't have to trust a stranger with your home and hope for
