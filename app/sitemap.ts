@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import { areaPages, OFFICE_AREA_PATH, EOT_AREA_PATH } from "@/lib/area-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -57,6 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/about", priority: 0.6, changeFrequency: "yearly" },
     { path: "/contact", priority: 0.8, changeFrequency: "yearly" },
   ];
+
+  // Area landing pages for the two main services.
+  for (const area of areaPages) {
+    const priority = area.tier === "primary" ? 0.85 : 0.75;
+    routes.push({ path: OFFICE_AREA_PATH(area.slug), priority, changeFrequency: "monthly" });
+    routes.push({ path: EOT_AREA_PATH(area.slug), priority, changeFrequency: "monthly" });
+  }
 
   return routes.map((r) => ({
     url: `${site.url}${r.path}`,

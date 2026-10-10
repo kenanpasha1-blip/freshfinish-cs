@@ -91,6 +91,19 @@ export function localBusinessJsonLd() {
       },
     ],
     sameAs: [site.contact.instagramUrl],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Cleaning services",
+      itemListElement: [
+        ["Office and commercial cleaning", `${site.url}/office-cleaning`],
+        ["School cleaning", `${site.url}/school-cleaning`],
+        ["End of tenancy cleaning", `${site.url}/end-of-tenancy-cleaning-london`],
+        ["Communal area cleaning for managing agents", `${site.url}/letting-agents`],
+      ].map(([name, url]) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name, url },
+      })),
+    },
   };
 }
 
@@ -99,6 +112,8 @@ export function serviceJsonLd(args: {
   description: string;
   url: string;
   serviceType?: string;
+  /** Override where the service is offered (area pages). */
+  areaServed?: object[];
 }) {
   return {
     "@context": "https://schema.org",
@@ -114,7 +129,7 @@ export function serviceJsonLd(args: {
       url: site.url,
       telephone: site.contact.phoneE164,
     },
-    areaServed: site.primaryAreas.map((name) => ({ "@type": "City", name })),
+    areaServed: args.areaServed ?? site.primaryAreas.map((name) => ({ "@type": "City", name })),
   };
 }
 

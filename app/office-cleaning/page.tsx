@@ -9,6 +9,7 @@ import CTASection from "@/components/CTASection";
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
 import StructuredData from "@/components/StructuredData";
+import { AreaLinks } from "@/components/AreaPageParts";
 import {
   buildMetadata,
   serviceJsonLd,
@@ -373,6 +374,8 @@ export default function Page() {
           </Link>
         </div>
       </Section>
+
+      <AreaLinks service="office" heading="Office cleaning in your area" />
 
       <FAQ
         items={officeFaqs}
