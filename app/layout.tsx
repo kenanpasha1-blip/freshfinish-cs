@@ -1,5 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { Inter, Fraunces } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const serif = Fraunces({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-serif-display",
+  display: "swap",
+});
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
@@ -16,13 +26,15 @@ export const metadata: Metadata = {
   applicationName: site.name,
   authors: [{ name: site.name, url: site.url }],
   keywords: [
+    "office cleaning london",
+    "commercial cleaning london",
+    "school cleaning london",
+    "school cleaning contractors",
+    "contract cleaning london",
     "end of tenancy cleaning london",
-    "end of tenancy cleaners london",
-    "move out cleaning london",
+    "communal cleaning london",
     "deep cleaning london",
     "after builders cleaning london",
-    "office cleaning london",
-    "domestic cleaning london",
     "professional cleaning london",
   ],
   openGraph: {
@@ -68,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${inter.variable} ${serif.variable}`}>
       <body className="min-h-screen flex flex-col">
         <StructuredData data={localBusinessJsonLd()} />
         <Header />

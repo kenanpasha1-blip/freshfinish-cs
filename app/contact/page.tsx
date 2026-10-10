@@ -71,7 +71,7 @@ export default function Page() {
                   Call {site.contact.phoneDisplay}
                 </Button>
                 <Button
-                  href={`https://wa.me/${site.contact.whatsappE164}`}
+                  href={site.contact.whatsappUrl}
                   variant="whatsapp"
                 >
                   <Icon name="whatsapp" size={16} />

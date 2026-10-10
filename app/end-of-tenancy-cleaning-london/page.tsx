@@ -176,7 +176,7 @@ export default function Page() {
                 Get a Quote
               </Button>
               <Button
-                href={`https://wa.me/${site.contact.whatsappE164}`}
+                href={site.contact.whatsappUrl}
                 variant="whatsapp"
                 size="md"
               >

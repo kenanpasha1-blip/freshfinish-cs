@@ -27,12 +27,29 @@ export default function ServicesOverview() {
             <Link
               key={s.slug}
               href={href}
-              className="group relative flex flex-col rounded-2xl bg-white p-6 border border-surface-200 hover:border-brand-300 hover:shadow-md transition-all"
+              className="group relative flex flex-col overflow-hidden rounded-2xl bg-white border border-surface-200 hover:border-brand-300 hover:shadow-lg transition-all"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 group-hover:bg-brand-100">
-                <Icon name={s.icon as IconName} size={22} />
-              </span>
-              <h3 className="mt-5 text-lg font-semibold text-brand-900">
+              {s.image ? (
+                <div className="relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={s.image}
+                    alt={s.name}
+                    loading="lazy"
+                    className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                  <span className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-xl bg-white/95 text-brand-700 shadow-sm">
+                    <Icon name={s.icon as IconName} size={20} />
+                  </span>
+                </div>
+              ) : null}
+              <div className="flex flex-1 flex-col p-6">
+              {!s.image && (
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 group-hover:bg-brand-100">
+                  <Icon name={s.icon as IconName} size={22} />
+                </span>
+              )}
+              <h3 className={`${s.image ? "" : "mt-5"} text-lg font-semibold text-brand-900`}>
                 {s.name}
                 {s.featured && (
                   <span className="ml-2 align-middle text-xs font-semibold text-accent-600 bg-accent-500/10 px-2 py-0.5 rounded-full">
@@ -47,6 +64,7 @@ export default function ServicesOverview() {
                 {s.hasPage ? "Learn more" : "Enquire"}
                 <Icon name="arrow-right" size={14} />
               </span>
+              </div>
             </Link>
           );
         })}

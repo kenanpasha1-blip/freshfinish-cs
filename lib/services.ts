@@ -16,6 +16,8 @@ export type Service = {
   hasPage: boolean;
   /** Lucide-style icon name, if we later plug in an icon set. */
   icon: string;
+  /** Optional card image (public path). */
+  image?: string;
   featured?: boolean;
 };
 
@@ -30,6 +32,7 @@ export const services: Service[] = [
       "A thorough top-to-bottom clean designed to meet letting-agent and landlord inventory standards, so you move out with the best chance of your full deposit back.",
     hasPage: true,
     icon: "key",
+    image: "/images/hero/hero-pro-cleaner.jpg",
     featured: true,
   },
   {
@@ -67,14 +70,27 @@ export const services: Service[] = [
   },
   {
     slug: "office-cleaning",
-    name: "Office Cleaning",
-    shortName: "Office",
+    name: "Office & Commercial Cleaning",
+    shortName: "Offices",
     blurb:
-      "Dependable commercial cleaning for small offices and workspaces in London.",
+      "Reliable scheduled cleaning for offices and workspaces across London, with photo proof of every visit.",
     description:
-      "Scheduled cleaning that keeps your workspace presentable for staff and clients, with flexible timing around your working hours.",
-    hasPage: false,
+      "Daily or scheduled office and commercial cleaning for managing agents, facilities managers and businesses across London, with before-and-after photos on every visit so the standard is never in question.",
+    hasPage: true,
     icon: "briefcase",
+    image: "/images/office/office-interior.jpg",
+  },
+  {
+    slug: "school-cleaning",
+    name: "School & Education Cleaning",
+    shortName: "Schools",
+    blurb:
+      "Dependable term-time and holiday cleaning for schools across London, worked around the school day.",
+    description:
+      "Scheduled cleaning for schools, academies and education settings across London and Enfield, worked around the school day, with photo proof of every clean and a fully insured team.",
+    hasPage: true,
+    icon: "graduation-cap",
+    image: "/images/school/classroom.jpg",
   },
 ];
 

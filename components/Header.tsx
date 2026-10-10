@@ -8,9 +8,10 @@ import Logo from "./Logo";
 import { site } from "@/lib/site";
 
 const nav = [
-  { href: "/end-of-tenancy-cleaning-london", label: "End of Tenancy" },
-  { href: "/end-of-tenancy-cleaning-prices-london", label: "Prices" },
-  { href: "/what-does-end-of-tenancy-cleaning-include", label: "What's Included" },
+  { href: "/office-cleaning", label: "Offices" },
+  { href: "/school-cleaning", label: "Schools" },
+  { href: "/letting-agents", label: "Letting Agents" },
+  { href: "/end-of-tenancy-price-calculator", label: "Prices" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -23,7 +24,7 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
         <Logo height={80} priority />
 
-        <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-ink-700">
+        <nav className="hidden lg:flex items-center gap-8 text-[13px] font-medium tracking-wide text-ink-700">
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -44,9 +45,12 @@ export default function Header() {
             <Icon name="phone" size={16} />
             {site.contact.phoneDisplay}
           </Button>
-          <Button href="/contact" size="md">
-            Request a Quote
-          </Button>
+          <Link
+            href="/contact"
+            className="bg-[#0E1E26] px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-brand-700"
+          >
+            Book a site survey
+          </Link>
         </div>
 
         <button
@@ -87,7 +91,7 @@ export default function Header() {
               <Button href={`tel:${site.contact.phoneE164}`} variant="secondary">
                 <Icon name="phone" size={16} /> Call {site.contact.phoneDisplay}
               </Button>
-              <Button href="/contact">Request a Quote</Button>
+              <Link href="/contact" className="bg-[#0E1E26] px-6 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.14em] text-white">Book a site survey</Link>
             </div>
           </div>
         </div>

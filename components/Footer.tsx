@@ -9,8 +9,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-brand-900 text-brand-100">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-        <div>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-14 grid grid-cols-2 gap-x-6 gap-y-10 md:gap-10 lg:grid-cols-4">
+        <div className="col-span-2 md:col-span-1">
           <div className="mb-4">
             <Logo height={56} variant="light" />
           </div>
@@ -30,7 +30,7 @@ export default function Footer() {
               <Icon name="instagram" size={18} />
             </a>
             <a
-              href={`https://wa.me/${site.contact.whatsappE164}`}
+              href={site.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -86,7 +86,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="col-span-2 md:col-span-1">
           <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
             Contact
           </h3>
@@ -112,7 +112,7 @@ export default function Footer() {
             <li className="flex items-start gap-2">
               <Icon name="whatsapp" size={16} className="mt-0.5 text-accent-400" />
               <a
-                href={`https://wa.me/${site.contact.whatsappE164}`}
+                href={site.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-brand-100 hover:text-white"

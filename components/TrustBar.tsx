@@ -3,23 +3,23 @@ import Icon, { type IconName } from "./Icon";
 const items: { icon: IconName; label: string; sub: string }[] = [
   {
     icon: "shield-check",
-    label: "Trained, insured team",
-    sub: "Professional-grade kit, not a generic spray bottle",
-  },
-  {
-    icon: "star",
-    label: "Real Google reviews",
-    sub: "From real customers in London",
-  },
-  {
-    icon: "map-pin",
-    label: "London-focused coverage",
-    sub: "Plus selected Herts & Essex",
+    label: "Fully insured",
+    sub: "Certificates available on request",
   },
   {
     icon: "check",
-    label: "Quotes per property",
-    sub: "Transparent, no hourly surprises",
+    label: "DBS-checked staff",
+    sub: "For schools and sensitive sites",
+  },
+  {
+    icon: "clock",
+    label: "Every visit logged",
+    sub: "Checked in and out on site",
+  },
+  {
+    icon: "star",
+    label: "Five-star Google reviews",
+    sub: "From real London clients",
   },
 ];
 

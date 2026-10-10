@@ -16,6 +16,7 @@ export type IconName =
   | "hard-hat"
   | "home"
   | "briefcase"
+  | "graduation-cap"
   | "shield-check"
   | "clock"
   | "map-pin"
@@ -78,6 +79,13 @@ export default function Icon({ name, className = "", size = 20, ...rest }: Props
         <svg {...common}>
           <rect x="3" y="7" width="18" height="13" rx="2" />
           <path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2" />
+        </svg>
+      );
+    case "graduation-cap":
+      return (
+        <svg {...common}>
+          <path d="M12 4L2 9l10 5 10-5-10-5z" />
+          <path d="M6 11v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5" />
         </svg>
       );
     case "shield-check":

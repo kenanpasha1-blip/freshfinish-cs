@@ -12,7 +12,7 @@ type Props = {
 export default function CTASection({
   heading = "Ready for a fresh finish?",
   body = "Tell us about the property and we'll come back with a quote quickly. All bookings are reviewed and confirmed before they're final — no automatic charges, no surprises.",
-  primary = { href: "/contact", label: "Request a Quote" },
+  primary = { href: "/contact", label: "Book a free site survey" },
   secondary,
 }: Props) {
   return (
@@ -50,7 +50,7 @@ export default function CTASection({
                 Call {site.contact.phoneDisplay}
               </Button>
               <Button
-                href={`https://wa.me/${site.contact.whatsappE164}`}
+                href={site.contact.whatsappUrl}
                 variant="whatsapp"
                 size="lg"
               >

@@ -17,7 +17,7 @@ import { site } from "@/lib/site";
 const PATH = "/end-of-tenancy-cleaning-prices-london";
 
 export const metadata: Metadata = buildMetadata({
-  title: "End of Tenancy Cleaning Prices London — Transparent Quotes",
+  title: "End of Tenancy Cleaning Prices London | Fixed Prices",
   description:
     "How end of tenancy cleaning prices work in London — what drives the cost, what's included, and why honest quotes vary. Request a per-property quote from Fresh Finish.",
   path: PATH,

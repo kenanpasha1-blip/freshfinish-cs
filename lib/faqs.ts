@@ -15,7 +15,9 @@ export type FAQCollection =
   | "prices"
   | "includes"
   | "checklist"
-  | "duration";
+  | "duration"
+  | "office"
+  | "school";
 
 export const faqs: FAQ[] = [
   {
@@ -107,6 +109,42 @@ export const faqs: FAQ[] = [
     answer:
       "Sometimes, depending on availability and how busy the day is. Weekends and end-of-month are usually our busiest periods, so book ahead where you can. Contact us with your postcode and preferred date and we'll confirm quickly.",
     collections: ["duration", "eot"],
+  },
+  {
+    question: "Do you clean offices outside working hours?",
+    answer:
+      "Yes. Most office and commercial cleaning is done early mornings, evenings or over the weekend so your team walks into a clean workspace without disruption. We agree the schedule around your hours.",
+    collections: ["office", "home"],
+  },
+  {
+    question: "Can we see that each office clean has actually been done?",
+    answer:
+      "Yes. Every visit is photographed and logged in your own portal, so managing agents and facilities managers can see the standard on every visit without chasing. Anything you flag is put right on the very next clean.",
+    collections: ["office"],
+  },
+  {
+    question: "Do you take on regular office cleaning contracts?",
+    answer:
+      "Yes — daily, several times a week, weekly or fortnightly. We work with managing agents, facilities managers and businesses across London on ongoing contracts, and we're happy to cover single-site or multi-site.",
+    collections: ["office"],
+  },
+  {
+    question: "Do you already clean schools?",
+    answer:
+      "Yes. We hold an ongoing school cleaning contract, so we understand how education sites need to be cleaned, and how to work safely and discreetly around pupils and staff.",
+    collections: ["school", "home"],
+  },
+  {
+    question: "Are your staff suitable to work on school sites?",
+    answer:
+      "We are fully insured and our staff on school sites are DBS-checked, and we work to the safeguarding expectations schools have for any contractor on site. We can share our insurance and vetting details on request.",
+    collections: ["school"],
+  },
+  {
+    question: "Can you clean around the school day and during holidays?",
+    answer:
+      "Yes. We schedule daily cleaning around the school day and can carry out larger deep cleans during half-terms and holidays. We build the schedule around your timetable and site access.",
+    collections: ["school"],
   },
 ];
 

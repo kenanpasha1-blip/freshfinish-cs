@@ -8,16 +8,19 @@ export const site = {
   legalName: "Fresh Finish Cleaning Solutions",
   tagline: "Professional cleaning across London and the Home Counties",
   description:
-    "Fresh Finish Cleaning Solutions delivers professional end of tenancy, deep, after-build, domestic and office cleaning across London, with selected coverage in Hertfordshire and Essex. Trained, insured team, per-property pricing and real five-star Google reviews.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://freshfinish-cs.co.uk",
+    "Fresh Finish Cleaning Solutions delivers professional commercial cleaning across London, office and school contract cleaning, communal and end of tenancy cleaning, with selected coverage in Hertfordshire and Essex. Trained, insured team, photo proof on every visit and real five-star Google reviews.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.freshfinish-cs.co.uk",
   locale: "en_GB",
 
   contact: {
-    phone: "07961860128",
-    phoneDisplay: "07961 860128",
-    phoneE164: "+447961860128",
+    phone: "02039274499",
+    phoneDisplay: "020 3927 4499",
+    phoneE164: "+442039274499",
     email: "info@freshfinish-cs.co.uk",
-    whatsappE164: "447961860128",
+    // Username is reserved but WhatsApp hasn't activated it yet ("coming soon").
+    // Once it's live, switch whatsappUrl to https://wa.me/freshfinishcleaningsolutions
+    whatsappUsername: "freshfinishcleaningsolutions",
+    whatsappUrl: "https://wa.me/447961860128",
     instagramHandle: "freshfinishcleaningsolutions",
     instagramUrl: "https://www.instagram.com/freshfinishcleaningsolutions/",
   },

@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 const PATH = "/end-of-tenancy-cleaning-checklist-uk";
 
 export const metadata: Metadata = buildMetadata({
-  title: "End of Tenancy Cleaning Checklist (UK) — Full Printable Guide",
+  title: "End of Tenancy Cleaning Checklist UK | Printable Guide",
   description:
     "A complete UK end of tenancy cleaning checklist for tenants, landlords and letting agents. Organised room by room so nothing gets missed at check-out.",
   path: PATH,

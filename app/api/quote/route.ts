@@ -39,6 +39,9 @@ function labelFor(kind: "service" | "property", value?: string) {
     "3-bed": "3-bedroom property",
     "4-bed-plus": "4+ bedroom property",
     "office-small": "Small office",
+    office: "Office / workspace",
+    commercial: "Other commercial premises",
+    school: "School / education site",
     other: "Other",
   };
   return properties[value] ?? value;

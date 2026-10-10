@@ -10,8 +10,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }[] = [
     { path: "/", priority: 1.0, changeFrequency: "weekly" },
     {
-      path: "/end-of-tenancy-cleaning-london",
+      path: "/office-cleaning",
       priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/letting-agents",
+      priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/end-of-tenancy-price-calculator",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/school-cleaning",
+      priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/end-of-tenancy-cleaning-london",
+      priority: 0.9,
       changeFrequency: "weekly",
     },
     {

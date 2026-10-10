@@ -72,7 +72,7 @@ export default function QuoteForm() {
           required
           type="tel"
           autoComplete="tel"
-          placeholder="07961 860128"
+          placeholder="e.g. 07700 900123"
         />
       </div>
 
@@ -107,7 +107,9 @@ export default function QuoteForm() {
             { value: "2-bed", label: "2-bedroom flat or house" },
             { value: "3-bed", label: "3-bedroom property" },
             { value: "4-bed-plus", label: "4+ bedroom property" },
-            { value: "office-small", label: "Small office" },
+            { value: "office", label: "Office / workspace" },
+            { value: "commercial", label: "Other commercial premises" },
+            { value: "school", label: "School / education site" },
             { value: "other", label: "Other" },
           ]}
         />

@@ -22,7 +22,8 @@ export function buildMetadata({
   const url = `${site.url}${path}`;
 
   return {
-    title: fullTitle,
+    // absolute: stops the layout's "%s | site name" template adding the name twice
+    title: { absolute: fullTitle },
     description,
     alternates: { canonical: url },
     openGraph: {
