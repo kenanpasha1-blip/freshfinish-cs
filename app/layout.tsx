@@ -13,6 +13,7 @@ const serif = Fraunces({
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/next";
 import { site } from "@/lib/site";
 import { localBusinessJsonLd } from "@/lib/seo";
 
@@ -86,6 +87,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
