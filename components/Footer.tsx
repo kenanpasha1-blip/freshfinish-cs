@@ -3,133 +3,107 @@ import Icon from "./Icon";
 import Logo from "./Logo";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
-import { primaryAreas, widerAreas } from "@/lib/areas";
 
+/**
+ * Footer as full-width bands rather than columns, so every edge lines up:
+ * logo + quote actions, one row of services, one line of areas, one contact
+ * row, then the legal line. No opening hours here on purpose: cleans often
+ * happen outside them and the line put people off asking.
+ */
 export default function Footer() {
   const year = new Date().getFullYear();
+  const dot = (
+    <span aria-hidden="true" className="text-brand-600 select-none">
+      ·
+    </span>
+  );
   return (
     <footer className="bg-brand-900 text-brand-100">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-14 grid grid-cols-2 gap-x-6 gap-y-10 md:gap-10 lg:grid-cols-4">
-        <div className="col-span-2 md:col-span-1">
-          <div className="mb-4">
-            <Logo height={56} variant="light" />
-          </div>
-          <p className="text-sm text-brand-200 leading-relaxed">
-            Professional end of tenancy, deep, after-build, domestic and
-            office cleaning across London. Trained, insured team, per-property
-            pricing, and bookings reviewed before they're confirmed.
-          </p>
-          <div className="mt-6 flex items-center gap-3">
-            <a
-              href={site.contact.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="p-2 rounded-full bg-brand-800 hover:bg-brand-700"
+      {/* Band 1: logo and the two actions */}
+      <div className="bg-brand-700">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-5">
+          <Logo height={46} variant="light" />
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/contact"
+              className="rounded-[10px] bg-accent-500 px-6 py-3 text-[15px] font-bold text-brand-900 hover:bg-accent-400"
             >
-              <Icon name="instagram" size={18} />
-            </a>
+              Get a free quote
+            </Link>
             <a
-              href={site.contact.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              className="p-2 rounded-full bg-brand-800 hover:bg-brand-700"
+              href={`tel:${site.contact.phoneE164}`}
+              className="flex items-center gap-2 rounded-[10px] border border-brand-400 px-5 py-3 text-[15px] font-bold text-white hover:border-brand-300"
             >
-              <Icon name="whatsapp" size={18} />
+              <Icon name="phone" size={16} className="text-accent-400" />
+              {site.contact.phoneDisplay}
             </a>
           </div>
-        </div>
-
-        <div>
-          <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-            Services
-          </h3>
-          <ul className="space-y-2 text-sm">
-            {services.map((s) => (
-              <li key={s.slug}>
-                {s.hasPage ? (
-                  <Link
-                    href={`/${s.slug}`}
-                    className="text-brand-200 hover:text-white"
-                  >
-                    {s.name}
-                  </Link>
-                ) : (
-                  <Link
-                    href="/contact"
-                    className="text-brand-200 hover:text-white"
-                  >
-                    {s.name}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-            Areas
-          </h3>
-          <ul className="space-y-2 text-sm">
-            {primaryAreas.map((a) => (
-              <li key={a.slug} className="text-brand-200">
-                {a.name}
-              </li>
-            ))}
-            {widerAreas.map((a) => (
-              <li key={a.slug} className="text-brand-300">
-                {a.name} (selected)
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="col-span-2 md:col-span-1">
-          <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-            Contact
-          </h3>
-          <ul className="space-y-3 text-sm">
-            <li className="flex items-start gap-2">
-              <Icon name="phone" size={16} className="mt-0.5 text-accent-400" />
-              <a
-                href={`tel:${site.contact.phoneE164}`}
-                className="text-brand-100 hover:text-white"
-              >
-                {site.contact.phoneDisplay}
-              </a>
-            </li>
-            <li className="flex items-start gap-2">
-              <Icon name="mail" size={16} className="mt-0.5 text-accent-400" />
-              <a
-                href={`mailto:${site.contact.email}`}
-                className="text-brand-100 hover:text-white break-all"
-              >
-                {site.contact.email}
-              </a>
-            </li>
-            <li className="flex items-start gap-2">
-              <Icon name="whatsapp" size={16} className="mt-0.5 text-accent-400" />
-              <a
-                href={site.contact.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-100 hover:text-white"
-              >
-                WhatsApp us
-              </a>
-            </li>
-            <li className="flex items-start gap-2">
-              <Icon name="clock" size={16} className="mt-0.5 text-accent-400" />
-              <span className="text-brand-200">{site.hours.display}</span>
-            </li>
-          </ul>
         </div>
       </div>
 
+      {/* Band 2: services, one centred row */}
+      <nav
+        aria-label="Services"
+        className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-8 flex flex-wrap items-center justify-center gap-x-3.5 gap-y-2 text-[15px] font-semibold"
+      >
+        {services.map((s, i) => (
+          <span key={s.slug} className="flex items-center gap-3.5">
+            {i > 0 ? dot : null}
+            <Link
+              href={s.hasPage ? `/${s.slug}` : "/contact"}
+              className="text-brand-100 hover:text-white"
+            >
+              {s.shortName}
+            </Link>
+          </span>
+        ))}
+      </nav>
+
+      {/* Band 3: areas, one centred line */}
+      <p className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mt-4 text-center text-[13.5px] text-brand-300">
+        North, North West, Central, East, North East and West London, plus
+        selected jobs in Hertfordshire and Essex
+      </p>
+
+      {/* Band 4: contact, one centred row */}
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mt-6 pb-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[14.5px]">
+        <a
+          href={`tel:${site.contact.phoneE164}`}
+          className="flex items-center gap-2 text-base font-bold text-white hover:text-accent-200"
+        >
+          <Icon name="phone" size={16} className="text-accent-400" />
+          {site.contact.phoneDisplay}
+        </a>
+        <a
+          href={site.contact.whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-brand-100 hover:text-white"
+        >
+          <Icon name="whatsapp" size={16} className="text-[#25d366]" />
+          WhatsApp us
+        </a>
+        <a
+          href={`mailto:${site.contact.email}`}
+          className="flex items-center gap-2 text-brand-100 hover:text-white break-all"
+        >
+          <Icon name="mail" size={16} className="text-accent-400" />
+          {site.contact.email}
+        </a>
+        <a
+          href={site.contact.instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="flex items-center text-brand-100 hover:text-white"
+        >
+          <Icon name="instagram" size={18} />
+        </a>
+      </div>
+
+      {/* Band 5: legal */}
       <div className="border-t border-brand-800">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row md:justify-between gap-3 text-xs text-brand-300">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row md:justify-between gap-2 text-xs text-brand-300">
           <p>
             © {year} {site.legalName}. All rights reserved.
           </p>
