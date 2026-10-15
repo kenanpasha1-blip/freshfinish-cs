@@ -61,7 +61,7 @@ export function EditorialHero({
   mobilePosition?: string;
 }) {
   return (
-    <section className="relative isolate overflow-hidden bg-[#061a24] md:min-h-[72vh]">
+    <section className="relative isolate overflow-hidden bg-[#061a24]">
       {/* Phones: photo fills the top and fades into solid ink where the text sits. */}
       <div className="absolute inset-x-0 -top-[18svh] h-[80svh] md:hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -75,7 +75,7 @@ export function EditorialHero({
       <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-[#061a24]/95 via-[#061a24]/72 to-[#061a24]/20 md:block" />
       <div className="absolute inset-0 -z-10 hidden bg-gradient-to-t from-[#061a24]/80 via-transparent to-transparent md:block" />
 
-      <div className="mx-auto flex max-w-7xl flex-col justify-between relative px-5 pb-10 pt-[15svh] sm:px-6 md:min-h-[72vh] md:pt-16 lg:px-10 lg:pt-20">
+      <div className="mx-auto flex max-w-7xl flex-col justify-between relative px-5 pb-8 pt-[15svh] sm:px-6 md:pt-12 lg:px-10 lg:pt-14">
         <div className="max-w-3xl">
           <p className={`${label} flex items-center gap-4 text-white/70`}>
             <span className="h-px w-10 bg-accent-300" />
@@ -84,8 +84,8 @@ export function EditorialHero({
           <h1 className={`${serif} mt-6 text-[2.35rem] leading-[1.08] text-white sm:mt-8 sm:text-6xl sm:leading-[1.06] lg:text-[4.6rem]`}>
             {title}
           </h1>
-          <p className="mt-8 hidden max-w-xl text-lg leading-relaxed text-white/75 md:block">{intro}</p>
-          <div className="mt-7 flex flex-wrap items-center gap-6 md:mt-10">
+          <p className="mt-5 hidden max-w-xl text-lg leading-relaxed text-white/75 md:block">{intro}</p>
+          <div className="mt-7 flex flex-wrap items-center gap-6 md:mt-8">
             <PrimaryButton href={cta.href}>{cta.label}</PrimaryButton>
             <a href={`tel:${site.contact.phoneE164}`} className="group text-sm font-semibold uppercase tracking-[0.14em] text-white">
               Call {site.contact.phoneDisplay}
@@ -94,7 +94,7 @@ export function EditorialHero({
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-5 border-t border-white/15 pt-6 sm:mt-16 sm:gap-6 sm:pt-8 md:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-5 border-t border-white/15 pt-6 sm:mt-10 sm:gap-6 sm:pt-6 md:grid-cols-4">
           {credentials.map(([k, v]) => (
             <div key={k}>
               <div className={`${label} text-white`}>{k}</div>
