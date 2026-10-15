@@ -61,7 +61,7 @@ export function EditorialHero({
   mobilePosition?: string;
 }) {
   return (
-    <section className="relative isolate overflow-hidden bg-[#061a24] md:min-h-[86vh]">
+    <section className="relative isolate overflow-hidden bg-[#061a24] md:min-h-[72vh]">
       {/* Phones: photo fills the top and fades into solid ink where the text sits. */}
       <div className="absolute inset-x-0 -top-[18svh] h-[80svh] md:hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -75,7 +75,7 @@ export function EditorialHero({
       <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-[#061a24]/95 via-[#061a24]/72 to-[#061a24]/20 md:block" />
       <div className="absolute inset-0 -z-10 hidden bg-gradient-to-t from-[#061a24]/80 via-transparent to-transparent md:block" />
 
-      <div className="mx-auto flex max-w-7xl flex-col justify-between relative px-5 pb-10 pt-[15svh] sm:px-6 md:min-h-[86vh] md:pt-20 lg:px-10 lg:pt-28">
+      <div className="mx-auto flex max-w-7xl flex-col justify-between relative px-5 pb-10 pt-[15svh] sm:px-6 md:min-h-[72vh] md:pt-16 lg:px-10 lg:pt-20">
         <div className="max-w-3xl">
           <p className={`${label} flex items-center gap-4 text-white/70`}>
             <span className="h-px w-10 bg-accent-300" />
