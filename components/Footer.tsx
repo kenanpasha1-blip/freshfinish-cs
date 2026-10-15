@@ -28,9 +28,9 @@ export default function Footer() {
             <Image
               src="/logo-wordmark-white.png"
               alt="Fresh Finish Cleaning Solutions"
-              width={228}
-              height={41}
-              className="h-auto w-[190px] sm:w-[228px]"
+              width={170}
+              height={31}
+              className="h-auto w-[150px] sm:w-[170px]"
             />
           </Link>
           <div className="flex flex-wrap items-center justify-center gap-3">
