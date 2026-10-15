@@ -79,7 +79,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mt-6 pb-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[14.5px]">
         <a
           href={`tel:${site.contact.phoneE164}`}
-          className="flex items-center gap-2 text-base font-bold text-white hover:text-accent-200"
+          className="flex items-center gap-2 text-brand-100 hover:text-white"
         >
           <Icon name="phone" size={16} className="text-accent-400" />
           {site.contact.phoneDisplay}
