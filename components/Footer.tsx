@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import Icon from "./Icon";
-import Logo from "./Logo";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 
@@ -22,7 +22,17 @@ export default function Footer() {
       {/* Band 1: logo and the two actions */}
       <div className="bg-brand-700">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-5">
-          <Logo height={46} variant="light" />
+          {/* The wide wordmark crop, not the stacked logo: at this size the
+              stacked version reads tiny next to the buttons. */}
+          <Link href="/" aria-label="Fresh Finish home">
+            <Image
+              src="/logo-wordmark-white.png"
+              alt="Fresh Finish Cleaning Solutions"
+              width={228}
+              height={41}
+              className="h-auto w-[190px] sm:w-[228px]"
+            />
+          </Link>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/contact"
