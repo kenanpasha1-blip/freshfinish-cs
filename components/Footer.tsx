@@ -22,17 +22,14 @@ export default function Footer() {
       {/* Band 1: logo and the two actions */}
       <div className="bg-brand-700">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-5">
-          {/* The wide wordmark crop, not the stacked logo: at this size the
-              stacked version reads tiny next to the buttons. */}
-          <Link href="/" aria-label="Fresh Finish home">
-            <Image
-              src="/logo-wordmark-white.png"
-              alt="Fresh Finish Cleaning Solutions"
-              width={170}
-              height={31}
-              className="h-auto w-[150px] sm:w-[170px]"
-            />
-          </Link>
+          <div className="text-center sm:text-left">
+            <p className="text-xl font-extrabold text-white tracking-tight">
+              Ready for a fresh finish?
+            </p>
+            <p className="mt-0.5 text-sm text-brand-200">
+              Free quote, no pressure, no contract.
+            </p>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/contact"
@@ -111,13 +108,24 @@ export default function Footer() {
         </a>
       </div>
 
-      {/* Band 5: legal */}
+      {/* Band 5: logo bottom left, legal lines beside it */}
       <div className="border-t border-brand-800">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row md:justify-between gap-2 text-xs text-brand-300">
-          <p>
-            © {year} {site.legalName}. All rights reserved.
-          </p>
-          <p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex flex-col items-center md:items-start gap-2.5">
+            <Link href="/" aria-label="Fresh Finish home">
+              <Image
+                src="/logo-wordmark-white.png"
+                alt="Fresh Finish Cleaning Solutions"
+                width={150}
+                height={27}
+                className="h-auto w-[150px]"
+              />
+            </Link>
+            <p className="text-xs text-brand-300">
+              © {year} {site.legalName}. All rights reserved.
+            </p>
+          </div>
+          <p className="text-center md:text-right text-xs text-brand-300">
             Bookings and quotes are reviewed and confirmed before they're final.
           </p>
         </div>
