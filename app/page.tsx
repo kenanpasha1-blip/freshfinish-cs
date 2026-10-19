@@ -16,9 +16,9 @@ import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: `${site.name} | Commercial, Office, School & Property Cleaning London`,
+  title: `${site.name} | Commercial, Office, End of Tenancy & School Cleaning London`,
   description:
-    "Contract cleaning for London offices, schools, letting agents and managing agents. A named account manager, DBS-checked teams and a photo report after every clean. Book a free site survey.",
+    "Contract cleaning for London offices, end of tenancy cleaning for letting agents and landlords, plus schools and communal areas. A named account manager, DBS-checked teams and a photo report after every clean.",
   path: "/",
   suffix: false,
 });
