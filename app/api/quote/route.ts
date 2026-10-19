@@ -89,6 +89,39 @@ export async function POST(req: Request) {
     }
   }
 
+  // 1) Straight into the office portal (client, enquiry job, Inbox item with a
+  // drafted reply and a phone alert). This is the copy that must not be lost.
+  let savedToPortal = false;
+  const intakeSecret = process.env.INTAKE_SECRET;
+  if (intakeSecret) {
+    try {
+      const r = await fetch(process.env.PORTAL_INTAKE_URL || "https://portal.freshfinish-cs.co.uk/api/intake", {
+        method: "POST",
+        headers: { "content-type": "application/json", "x-intake-secret": intakeSecret },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          service: data.service,
+          service_label: labelFor("service", data.service),
+          property: data.property,
+          property_label: labelFor("property", data.property),
+          location: data.location,
+          preferred_date: data.preferred_date,
+          message: data.message,
+        }),
+      });
+      savedToPortal = r.ok;
+      if (!r.ok) console.error("[quote] portal intake failed:", r.status, (await r.text()).slice(0, 300));
+    } catch (err) {
+      console.error("[quote] portal intake threw:", err);
+    }
+  } else {
+    console.error("[quote] INTAKE_SECRET is not set, enquiry not saved to the portal");
+  }
+
+  // 2) The email copy. Best effort once the portal has it: the visitor only
+  // sees an error if neither copy landed.
   const apiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.QUOTE_FORM_TO_EMAIL || site.contact.email;
   const fromEmail =
@@ -96,7 +129,8 @@ export async function POST(req: Request) {
     "Fresh Finish Website <onboarding@resend.dev>";
 
   if (!apiKey) {
-    console.error("[quote] RESEND_API_KEY is not set — enquiry not delivered");
+    console.error("[quote] RESEND_API_KEY is not set, no email copy");
+    if (savedToPortal) return NextResponse.json({ ok: true });
     console.log("[quote] enquiry payload:", data);
     return NextResponse.json(
       { ok: false, error: "Email service not configured" },
@@ -158,17 +192,21 @@ export async function POST(req: Request) {
 
     if (error) {
       console.error("[quote] Resend error:", error);
-      return NextResponse.json(
-        { ok: false, error: "Failed to send enquiry" },
-        { status: 502 }
-      );
+      if (!savedToPortal) {
+        return NextResponse.json(
+          { ok: false, error: "Failed to send enquiry" },
+          { status: 502 }
+        );
+      }
     }
   } catch (err) {
     console.error("[quote] Unexpected error:", err);
-    return NextResponse.json(
-      { ok: false, error: "Unexpected error" },
-      { status: 500 }
-    );
+    if (!savedToPortal) {
+      return NextResponse.json(
+        { ok: false, error: "Unexpected error" },
+        { status: 500 }
+      );
+    }
   }
 
   return NextResponse.json({ ok: true });
