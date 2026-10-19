@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ area: str
   const area = getAreaPage(slug);
   if (!area) return {};
   return buildMetadata({
-    title: `Office Cleaning ${area.name} | Contract Office Cleaners`,
-    description: `Contract office cleaning ${area.across}, including ${listTowns(area.examples, 4)}. Out of hours cleaning, one named account manager, every visit logged and photographed. Free site survey and fixed price.`,
+    title: `Commercial & Office Cleaning ${area.name} | Contract Cleaners`,
+    description: `Commercial and contract office cleaning ${area.across}, including ${listTowns(area.examples, 4)}. Out of hours cleaning, one named account manager, every visit logged and photographed. Free site survey and fixed price.`,
     path: OFFICE_AREA_PATH(area.slug),
   });
 }
@@ -67,7 +67,7 @@ export default async function OfficeAreaPage({ params }: { params: Promise<{ are
         data={[
           serviceJsonLd({
             name: `Office cleaning in ${area.name}`,
-            description: `Contract office cleaning ${area.across}, including ${towns}.`,
+            description: `Commercial and contract office cleaning ${area.across}, including ${towns}.`,
             url,
             serviceType: "Office cleaning",
             areaServed: [
