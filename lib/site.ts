@@ -8,7 +8,7 @@ export const site = {
   legalName: "Fresh Finish Cleaning Solutions",
   tagline: "Professional cleaning across London and the Home Counties",
   description:
-    "Fresh Finish Cleaning Solutions delivers professional commercial cleaning across London, office and school contract cleaning, communal and end of tenancy cleaning, with selected coverage in Hertfordshire and Essex. Trained, insured team, photo proof on every visit and real five-star Google reviews.",
+    "Commercial, office, school and end of tenancy cleaning across London. Trained, insured teams, photo proof on every visit and five star Google reviews.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.freshfinish-cs.co.uk",
   locale: "en_GB",
 

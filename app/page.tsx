@@ -16,9 +16,10 @@ import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: `${site.name} | Commercial, Office, End of Tenancy & School Cleaning London`,
+  // 65 characters on the nose: any longer and Google cuts the title mid sentence.
+  title: "Commercial, Office, End of Tenancy Cleaning London | Fresh Finish",
   description:
-    "Contract cleaning for London offices, end of tenancy cleaning for letting agents and landlords, plus schools and communal areas. A named account manager, DBS-checked teams and a photo report after every clean.",
+    "Contract cleaning for London offices, end of tenancy cleans for letting agents, plus schools. DBS-checked teams and a photo report after every clean.",
   path: "/",
   suffix: false,
 });
