@@ -57,7 +57,7 @@ export default function AreasCovered({ heading, intro }: Props) {
               {widerAreas
                 .flatMap((a) => a.examples.slice(0, 3))
                 .join(", ")}{" "}
-              and more — send us your postcode and we'll confirm we cover it.
+              and more. Send us your postcode and we'll confirm we cover it.
             </p>
           </div>
         </div>

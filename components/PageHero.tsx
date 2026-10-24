@@ -7,11 +7,11 @@ type Props = {
   intro?: string;
   breadcrumbs: Crumb[];
   children?: ReactNode;
-  /** Optional hero image — turns the hero into a two-column visual layout. */
+  /** Optional hero image; turns the hero into a two-column visual layout. */
   image?: { src: string; alt: string };
 };
 
-/** Lighter hero for inner pages — smaller than the homepage hero. */
+/** Lighter hero for inner pages, smaller than the homepage hero. */
 export default function PageHero({
   eyebrow,
   heading,

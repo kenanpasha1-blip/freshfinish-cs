@@ -4,7 +4,7 @@ const steps = [
   {
     n: "01",
     title: "Tell us about the property",
-    body: "Send a few details — size, postcode, preferred date, any extras. Takes about a minute through our form, or tell us over the phone or WhatsApp.",
+    body: "Send a few details: size, postcode, preferred date, any extras. Takes about a minute through our form, or tell us over the phone or WhatsApp.",
   },
   {
     n: "02",

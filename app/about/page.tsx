@@ -14,7 +14,7 @@ const PATH = "/about";
 export const metadata: Metadata = buildMetadata({
   title: "About Fresh Finish Cleaning Solutions",
   description:
-    "Fresh Finish Cleaning Solutions is a professional, London-focused cleaning company — known for reliability, transparent per-property pricing and genuine five-star reviews.",
+    "Fresh Finish Cleaning Solutions is a professional, London-focused cleaning company, known for reliability, transparent per-property pricing and genuine five-star reviews.",
   path: PATH,
 });
 
@@ -31,7 +31,7 @@ export default function Page() {
       <PageHero
         eyebrow="About us"
         heading="A London cleaning company built on doing the work properly"
-        intro="We're Fresh Finish Cleaning Solutions — a professional cleaning team serving London, with selected coverage in Hertfordshire and Essex. Reputation-first, with real reviews and real before-and-afters to back it up."
+        intro="We're Fresh Finish Cleaning Solutions, a professional cleaning team serving London, with selected coverage in Hertfordshire and Essex. Reputation-first, with real reviews and real before-and-afters to back it up."
         breadcrumbs={[
           { href: "/", label: "Home" },
           { label: "About" },
@@ -45,27 +45,27 @@ export default function Page() {
               Fresh Finish was started to do one thing well: cleaning that
               actually holds up. In a city full of cheap headline quotes
               and one-star Gumtree operators, we wanted a cleaning company
-              London could rely on — for move-outs, for deep cleans, for
+              London could rely on for move-outs, for deep cleans, for
               the jobs that need to be right the first time.
             </p>
             <p>
               That shows up in small ways. We answer the phone. We turn up
               on time. We quote per property so there's no meter running.
-              And we stand behind the work — if something genuinely isn't
+              And we stand behind the work. If something genuinely isn't
               right, we'll put it right.
             </p>
             <p>
               Our focus is end of tenancy and deep cleaning, but we also
               take on after-build, domestic and office work. Most of what
-              we do is in London — that's where we know the stock, we know
+              we do is in London. That's where we know the stock, we know
               the letting agents, and we know what different property types
               need to pass a check-out. We also cover selected parts of
               Hertfordshire and Essex for existing clients and when
               postcodes line up.
             </p>
             <p>
-              We're proud of our reviews — you can find us on Google and
-              Instagram — and we'd rather earn a new one than chase
+              We're proud of our reviews (you can find us on Google and
+              Instagram) and we'd rather earn a new one than chase
               aggressive growth. Every clean is a chance to do the job
               properly and keep the reputation clean.
             </p>
@@ -91,7 +91,7 @@ export default function Page() {
                 },
                 {
                   t: "Easy to work with",
-                  b: "Phone, email, WhatsApp — whichever's easiest for you.",
+                  b: "Phone, email, WhatsApp: whichever's easiest for you.",
                 },
               ].map((v) => (
                 <li key={v.t}>

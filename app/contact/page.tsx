@@ -31,7 +31,7 @@ export default function Page() {
       <PageHero
         eyebrow="Get in touch"
         heading="Request a quote or booking enquiry"
-        intro="Send a few details about your property. We review every enquiry and confirm the quote and date before anything is booked — no automated bookings, no surprise charges."
+        intro="Send a few details about your property. We review every enquiry and confirm the quote and date before anything is booked. No automated bookings, no surprise charges."
         breadcrumbs={[
           { href: "/", label: "Home" },
           { label: "Contact" },
@@ -60,7 +60,7 @@ export default function Page() {
               </h3>
               <p className="mt-2 text-brand-100 text-sm leading-relaxed">
                 We're happy to chat through your move-out or cleaning job in a
-                couple of minutes. Phone, WhatsApp or email — whichever works.
+                couple of minutes. Phone, WhatsApp or email, whichever works.
               </p>
               <div className="mt-5 flex flex-col gap-2.5">
                 <Button
@@ -127,7 +127,7 @@ export default function Page() {
                     Bookings are reviewed, not auto-confirmed
                   </p>
                   <p className="mt-1 text-sm text-ink-700 leading-relaxed">
-                    Submitting this form is an enquiry — we'll come back to
+                    Submitting this form is an enquiry. We'll come back to
                     confirm price and availability before anything's locked in.
                     It means the quote you receive is accurate, not a
                     guess.

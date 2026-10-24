@@ -5,7 +5,7 @@ export const contentType = "image/png";
 
 /**
  * Dynamically generated favicon using the brand palette.
- * Deep teal background + bright cyan "F" + sparkle — lifted straight
+ * Deep teal background + bright cyan "F" + sparkle, lifted straight
  * from the logo system so the favicon matches the site.
  */
 export default function Icon() {

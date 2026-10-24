@@ -22,7 +22,7 @@ const PATH = "/end-of-tenancy-cleaning-london";
 
 export const metadata: Metadata = buildMetadata({
   title:
-    "End of Tenancy Cleaning London — Professional Move-Out Cleaners",
+    "End of Tenancy Cleaning London | Professional Move-Out Cleaners",
   description:
     "Professional end of tenancy cleaning across London. Check-out ready standard, per-property quotes, trained insured team. Trusted by tenants, landlords and letting agents.",
   path: PATH,
@@ -35,12 +35,12 @@ const includedRooms: {
   {
     title: "Kitchen",
     items: [
-      "Oven deep clean — racks, trays, glass, interior and exterior",
+      "Oven deep clean: racks, trays, glass, interior and exterior",
       "Hob, extractor filter and splashback descaled and degreased",
       "Fridge and freezer cleaned inside and out (defrosted where needed)",
       "Microwave, dishwasher, washing machine seals and drawers",
       "Inside and outside of all cupboards and drawers",
-      "Worktops, tiles, sink and taps — limescale removed",
+      "Worktops, tiles, sink and taps, limescale removed",
       "Bins cleaned and deodorised; skirtings and floors",
     ],
   },
@@ -102,7 +102,7 @@ export default function Page() {
       <PageHero
         eyebrow="End of tenancy cleaning · London"
         heading="Professional end of tenancy cleaning in London"
-        intro="Move-out cleaning built around letting-agent and landlord standards — so you, your tenant or your client can close out the tenancy with confidence. Per-property pricing, a trained insured team, and real five-star reviews from London customers."
+        intro="Move-out cleaning built around letting-agent and landlord standards, so you, your tenant or your client can close out the tenancy with confidence. Per-property pricing, a trained insured team, and real five-star reviews from London customers."
         breadcrumbs={[
           { href: "/", label: "Home" },
           { label: "End of Tenancy Cleaning London" },
@@ -128,7 +128,7 @@ export default function Page() {
           <div className="prose-content space-y-5 text-ink-700 text-lg leading-relaxed">
             <p>
               End of tenancy cleaning in London is rarely about a home that's
-              dirty — it's about a home that has to pass a check-out inspection.
+              dirty. It's about a home that has to pass a check-out inspection.
               Letting agents look at the oven. They look at the limescale on the
               shower screen. They look behind the fridge and inside the kitchen
               drawers. Miss any of that and a chunk of the deposit goes with it.
@@ -159,7 +159,7 @@ export default function Page() {
             <ul className="mt-4 space-y-3 text-sm text-ink-700">
               {[
                 "Full check-out-ready clean",
-                "Per-property pricing — no hourly surprises",
+                "Per-property pricing, no hourly surprises",
                 "Trained, professional team",
                 "Work to agent/inventory checklists on request",
                 "Bookings reviewed and confirmed before final",
@@ -271,7 +271,7 @@ export default function Page() {
           {[
             {
               title: "For tenants",
-              body: "You want your deposit back. We clean to the standard that gets it back — and if your agent genuinely flags something we've missed, we'll come back and put it right. No stress on move-out day.",
+              body: "You want your deposit back. We clean to the standard that gets it back, and if your agent genuinely flags something we've missed, we'll come back and put it right. No stress on move-out day.",
             },
             {
               title: "For landlords",
@@ -309,7 +309,7 @@ export default function Page() {
             </h2>
             <p className="mt-4 text-lg text-ink-700">
               End of tenancy is the one type of clean where the outcome is
-              checked — by you, your agent or your landlord. Here's why people
+              checked by you, your agent or your landlord. Here's why people
               choose us to do it in London.
             </p>
           </div>
@@ -407,7 +407,7 @@ export default function Page() {
 
       <CTASection
         heading="Get a clear end of tenancy quote, fast"
-        body="Send a few details and we'll come back with a per-property quote. Every booking is reviewed and confirmed before it's final — no automated bookings, no surprises."
+        body="Send a few details and we'll come back with a per-property quote. Every booking is reviewed and confirmed before it's final. No automated bookings, no surprises."
       />
     </>
   );

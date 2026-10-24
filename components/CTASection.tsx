@@ -11,7 +11,7 @@ type Props = {
 
 export default function CTASection({
   heading = "Ready for a fresh finish?",
-  body = "Tell us about the property and we'll come back with a quote quickly. All bookings are reviewed and confirmed before they're final — no automatic charges, no surprises.",
+  body = "Tell us about the property and we'll come back with a quote quickly. All bookings are reviewed and confirmed before they're final. No automatic charges, no surprises.",
   primary = { href: "/contact", label: "Book a free site survey" },
   secondary,
 }: Props) {

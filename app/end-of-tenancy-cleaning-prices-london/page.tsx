@@ -19,7 +19,7 @@ const PATH = "/end-of-tenancy-cleaning-prices-london";
 export const metadata: Metadata = buildMetadata({
   title: "End of Tenancy Cleaning Prices London | Fixed Prices",
   description:
-    "How end of tenancy cleaning prices work in London — what drives the cost, what's included, and why honest quotes vary. Request a per-property quote from Fresh Finish.",
+    "How end of tenancy cleaning prices work in London: what drives the cost, what's included, and why honest quotes vary. Request a per-property quote from Fresh Finish.",
   path: PATH,
 });
 
@@ -44,7 +44,7 @@ export default function Page() {
       <PageHero
         eyebrow="Pricing · End of tenancy · London"
         heading="How end of tenancy cleaning prices work in London"
-        intro="Honest pricing — no misleading headline rates. Here's exactly what drives the cost of an end of tenancy clean, and how we quote so you know the total before we start."
+        intro="Honest pricing, with no misleading headline rates. Here's exactly what drives the cost of an end of tenancy clean, and how we quote so you know the total before we start."
         breadcrumbs={[
           { href: "/", label: "Home" },
           {
@@ -60,14 +60,14 @@ export default function Page() {
           <div className="text-ink-700 text-lg leading-relaxed space-y-5">
             <p>
               End of tenancy cleaning in London doesn't have a single fixed
-              price — and anyone who quotes you one without seeing the property
+              price, and anyone who quotes you one without seeing the property
               is either lucky, generous or planning to up-sell you on the day.
               What we can tell you honestly is what drives the cost.
             </p>
             <p>
               We quote per property rather than per hour. That means you pay
-              for the outcome — a clean that's ready to hand back to your
-              agent or landlord — not for how long it takes our team. There's
+              for the outcome (a clean that's ready to hand back to your
+              agent or landlord), not for how long it takes our team. There's
               no running clock, and no &ldquo;we're out of time, can you add
               another hour?&rdquo; conversation at the door.
             </p>
@@ -87,7 +87,7 @@ export default function Page() {
             <ol className="mt-4 space-y-3 text-sm text-ink-700 list-decimal list-inside">
               <li>You share property size, postcode and any extras.</li>
               <li>We assess condition from your description or a couple of photos.</li>
-              <li>We send a per-property price — no hourly surprises.</li>
+              <li>We send a per-property price, so there are no hourly surprises.</li>
               <li>You approve, we confirm the slot, and we show up on the day.</li>
             </ol>
           </aside>
@@ -104,7 +104,7 @@ export default function Page() {
           </h2>
           <p className="mt-4 text-lg text-ink-700">
             Knowing these up front helps you get an accurate quote on the
-            first go — and spot any cleaner trying to under-quote to win the
+            first go, and spot any cleaner trying to under-quote to win the
             job.
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function Page() {
             },
             {
               t: "5. Agent or inventory requirements",
-              b: "If your letting agent has a specific check-out list, we'll work to it precisely. Sometimes that adds scope, sometimes it doesn't — either way, the quote reflects it.",
+              b: "If your letting agent has a specific check-out list, we'll work to it precisely. Sometimes that adds scope, sometimes it doesn't. Either way, the quote reflects it.",
             },
             {
               t: "Bonus: do you need carpet cleaning?",
@@ -161,7 +161,7 @@ export default function Page() {
               </h2>
               <p className="mt-4 text-brand-100 leading-relaxed">
                 If a quote looks dramatically cheaper than everyone else,
-                something's usually being cut — either the time spent, the
+                something's usually being cut: either the time spent, the
                 products used, or the coverage of the job. In end of
                 tenancy, a corner-cut clean can cost you more in lost deposit
                 than you saved. We'd rather be honest about the price than
@@ -229,7 +229,7 @@ export default function Page() {
 
       <CTASection
         heading="Want a real quote for your property?"
-        body="Share a few details — size, postcode, condition — and we'll come back quickly with an honest per-property price. No obligation, and nothing's booked until we both agree."
+        body="Share a few details (size, postcode, condition) and we'll come back quickly with an honest per-property price. No obligation, and nothing's booked until we both agree."
       />
     </>
   );

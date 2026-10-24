@@ -4,12 +4,12 @@ import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 
 /**
- * Quote form endpoint — validates input, sends an email via Resend.
+ * Quote form endpoint: validates input, sends an email via Resend.
  *
  * Env vars required in .env.local and in your Vercel project settings:
  *   - RESEND_API_KEY        (from https://resend.com/api-keys)
  *   - QUOTE_FORM_TO_EMAIL   (where enquiries are delivered, e.g. info@freshfinish-cs.co.uk)
- *   - QUOTE_FORM_FROM_EMAIL (optional — defaults to Resend's onboarding address)
+ *   - QUOTE_FORM_FROM_EMAIL (optional, defaults to Resend's onboarding address)
  */
 
 export const runtime = "nodejs";
@@ -23,7 +23,7 @@ type Payload = {
   location?: string;
   preferred_date?: string;
   message?: string;
-  /** Honeypot — bots fill it, humans don't. */
+  /** Honeypot: bots fill it, humans don't. */
   company?: string;
 };
 
@@ -67,7 +67,7 @@ export async function POST(req: Request) {
     );
   }
 
-  // Spam honeypot — silently accept so the bot thinks it worked.
+  // Spam honeypot: silently accept so the bot thinks it worked.
   if (data.company && data.company.length > 0) {
     return NextResponse.json({ ok: true });
   }
@@ -140,7 +140,7 @@ export async function POST(req: Request) {
 
   const resend = new Resend(apiKey);
 
-  const subject = `New enquiry — ${data.name} (${labelFor("service", data.service)})`;
+  const subject = `New enquiry: ${data.name} (${labelFor("service", data.service)})`;
 
   const rows: [string, string][] = [
     ["Name", data.name!],

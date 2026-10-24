@@ -35,17 +35,17 @@ export const site = {
     "West London",
   ],
 
-  /** Broader coverage — mentioned but not the primary SEO target. */
+  /** Broader coverage: mentioned but not the primary SEO target. */
   wider: ["Selected parts of Hertfordshire", "Selected parts of Essex"],
 
   hours: {
-    display: "Monday to Sunday, 8am – 7pm",
+    display: "Monday to Sunday, 8am to 7pm",
     days: "Mo-Su",
     opens: "08:00",
     closes: "19:00",
   },
 
-  /** Public-facing trust claims — keep truthful. */
+  /** Public-facing trust claims; keep truthful. */
   trust: {
     returnWindowHours: 48,
     googleReviewCount: 5, // real count at time of build

@@ -11,8 +11,8 @@ import { site } from "@/lib/site";
  * 2. Or wire this component to a data source (Google Places API, a CMS, etc.)
  *    and replace the array.
  *
- * Until you add them, this section shows a truthful placeholder — genuine
- * reputation on Google and Instagram — without fabricating any review text.
+ * Until you add them, this section shows a truthful placeholder (genuine
+ * reputation on Google and Instagram) without fabricating any review text.
  */
 
 type Review = {
@@ -39,7 +39,7 @@ export default function Reviews() {
           <p className="mt-4 text-lg text-ink-700 leading-relaxed">
             We've earned genuine five-star reviews on Google from real
             customers, and you can see actual before-and-afters from recent
-            jobs on our Instagram. Reputation isn't something we claim — it's
+            jobs on our Instagram. Reputation isn't something we claim. It's
             something you can verify.
           </p>
 
@@ -78,7 +78,7 @@ export default function Reviews() {
               </p>
               <p>
                 Rather than put words in customers' mouths, we'd rather show
-                you the real thing — search &ldquo;{site.name}&rdquo; on Google, or
+                you the real thing: search &ldquo;{site.name}&rdquo; on Google, or
                 visit our Instagram to see recent jobs and real feedback.
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function Reviews() {
                     &ldquo;{r.quote}&rdquo;
                   </blockquote>
                   <p className="mt-2 text-sm text-ink-500">
-                    — {r.author}
+                    {r.author}
                     {r.source && <> · {r.source}</>}
                   </p>
                 </li>

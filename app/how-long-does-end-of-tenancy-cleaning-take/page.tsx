@@ -15,36 +15,36 @@ const PATH = "/how-long-does-end-of-tenancy-cleaning-take";
 export const metadata: Metadata = buildMetadata({
   title: "How Long Does End of Tenancy Cleaning Take?",
   description:
-    "How long a professional end of tenancy clean actually takes — by property size, condition and add-ons. Realistic timing so you can plan move-out day properly.",
+    "How long a professional end of tenancy clean actually takes, by property size, condition and add-ons. Realistic timing so you can plan move-out day properly.",
   path: PATH,
 });
 
 const sizes = [
   {
     size: "Studio",
-    typical: "3 – 5 hours",
-    team: "1 – 2 cleaners",
+    typical: "3 to 5 hours",
+    team: "1 to 2 cleaners",
     notes:
       "One multi-purpose room plus a bathroom and kitchenette. The bathroom and oven usually set the pace.",
   },
   {
     size: "1-bedroom flat",
-    typical: "4 – 6 hours",
+    typical: "4 to 6 hours",
     team: "2 cleaners",
     notes:
       "Most common London end of tenancy size. Kitchen and bathroom do the bulk of the work.",
   },
   {
     size: "2-bedroom flat or small house",
-    typical: "5 – 7 hours",
+    typical: "5 to 7 hours",
     team: "2 cleaners",
     notes:
       "A second bathroom or a cluttered lived-in kitchen is what pushes these longer.",
   },
   {
     size: "3-bedroom property",
-    typical: "6 – 8+ hours",
-    team: "2 – 3 cleaners",
+    typical: "6 to 8+ hours",
+    team: "2 to 3 cleaners",
     notes:
       "More bedrooms, more wardrobes, often a second bathroom. Expect a full working day.",
   },
@@ -95,7 +95,7 @@ export default function Page() {
           </p>
           <p>
             Long answer: the clock isn't the point. What matters is whether
-            the property is check-out ready — and that depends less on time
+            the property is check-out ready, and that depends less on time
             and more on scope, condition and team size. Here's how to plan.
           </p>
         </div>
@@ -264,7 +264,7 @@ export default function Page() {
 
       <CTASection
         heading="Know exactly when it'll be done"
-        body="Share a few details about the property and we'll come back with an estimated window and a per-property price — so you can plan move-out day properly."
+        body="Share a few details about the property and we'll come back with an estimated window and a per-property price, so you can plan move-out day properly."
       />
     </>
   );

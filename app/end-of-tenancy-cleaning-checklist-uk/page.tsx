@@ -22,25 +22,25 @@ const checklist: { room: string; items: string[] }[] = [
     room: "Kitchen",
     items: [
       "Oven interior (top, base, sides, back)",
-      "Oven door glass — inside layer where accessible",
+      "Oven door glass: inside layer where accessible",
       "Oven racks and trays",
       "Oven seals and external housing",
-      "Hob — all burners, knobs, surround",
-      "Extractor hood — exterior and filter",
+      "Hob: all burners, knobs, surround",
+      "Extractor hood: exterior and filter",
       "Splashback and wall tiles",
       "Grout cleaned",
       "Fridge emptied, defrosted (if needed) and cleaned",
       "Freezer emptied, defrosted and cleaned",
       "Fridge/freezer seals and drawers",
-      "Microwave — inside, outside, turntable",
-      "Dishwasher — filter, spray arms, drawer",
-      "Washing machine — detergent drawer, rubber seal, glass door",
+      "Microwave: inside, outside, turntable",
+      "Dishwasher: filter, spray arms, drawer",
+      "Washing machine: detergent drawer, rubber seal, glass door",
       "Worktops wiped and polished",
       "Sink descaled and polished",
       "Taps and spout descaled",
-      "Cupboards — inside",
-      "Cupboards — outside, tops, handles",
-      "Drawers — inside and outside",
+      "Cupboards: inside",
+      "Cupboards: outside, tops, handles",
+      "Drawers: inside and outside",
       "Kick-boards at base of units",
       "Bin cleaned and deodorised",
       "Skirtings and radiators",
@@ -51,18 +51,18 @@ const checklist: { room: string; items: string[] }[] = [
   {
     room: "Bathrooms / WC",
     items: [
-      "Shower screen — both sides, descaled",
+      "Shower screen: both sides, descaled",
       "Shower tray / enclosure floor",
-      "Showerhead and hose — descaled",
+      "Showerhead and hose: descaled",
       "Wall tiles scrubbed",
       "Grout attended to",
       "Silicone sealant cleaned (not replaced)",
       "Bath scrubbed, rinsed, polished",
       "Basin, taps and overflow",
       "Mirror and any glass",
-      "Toilet — bowl, rim, seat (both sides), exterior",
-      "Toilet — behind, underneath and base",
-      "Cabinets — inside and out",
+      "Toilet: bowl, rim, seat (both sides), exterior",
+      "Toilet: behind, underneath and base",
+      "Cabinets: inside and out",
       "Extractor fan cover dusted",
       "Light fittings wiped",
       "Skirtings and radiators",
@@ -72,10 +72,10 @@ const checklist: { room: string; items: string[] }[] = [
   {
     room: "Bedrooms",
     items: [
-      "Wardrobe — inside (shelves, rails, floor)",
-      "Wardrobe — outside, top and handles",
-      "Chest of drawers — inside and out",
-      "Bedside tables — inside and out",
+      "Wardrobe: inside (shelves, rails, floor)",
+      "Wardrobe: outside, top and handles",
+      "Chest of drawers: inside and out",
+      "Bedside tables: inside and out",
       "Mirrors polished",
       "Windows (interior), sills and frames",
       "Radiators, skirtings, door frames",
@@ -100,12 +100,12 @@ const checklist: { room: string; items: string[] }[] = [
   {
     room: "Hallways, stairs and entrance",
     items: [
-      "Entrance door — interior, frame and letterbox",
+      "Entrance door: interior, frame and letterbox",
       "Stair spindles and handrail",
       "Landing and banister tops",
       "Cobwebs and high-level dust",
       "Radiators, skirtings, switches, sockets",
-      "Any cupboards under stairs — emptied and wiped",
+      "Any cupboards under stairs: emptied and wiped",
       "Floor: vacuum and/or mop",
     ],
   },
@@ -114,7 +114,7 @@ const checklist: { room: string; items: string[] }[] = [
     items: [
       "Boiler cupboard exterior wiped",
       "Shelving emptied and cleaned",
-      "Storage cupboards — inside and out",
+      "Storage cupboards: inside and out",
       "Floor vacuumed and mopped",
     ],
   },
@@ -149,7 +149,7 @@ export default function Page() {
       <PageHero
         eyebrow="Checklist · UK"
         heading="The full end of tenancy cleaning checklist (UK)"
-        intro="A genuinely useful checklist for tenants, landlords and letting agents — organised room by room so nothing's missed at check-out. Save it, print it, or send it to your cleaner."
+        intro="A genuinely useful checklist for tenants, landlords and letting agents, organised room by room so nothing's missed at check-out. Save it, print it, or send it to your cleaner."
         breadcrumbs={[
           { href: "/", label: "Home" },
           { href: "/end-of-tenancy-cleaning-london", label: "End of Tenancy" },
@@ -162,7 +162,7 @@ export default function Page() {
           <p>
             Use this checklist as your reference before, during and after
             move-out day. It's the same scope our team works to on a full
-            end of tenancy clean in London — including the detail that
+            end of tenancy clean in London, including the detail that
             tends to cost tenants their deposit when it's overlooked.
           </p>
           <p>
@@ -173,7 +173,7 @@ export default function Page() {
           </p>
         </div>
         <div className="mt-6 rounded-xl bg-surface-50 border border-surface-200 p-4 text-sm text-ink-500">
-          This checklist is a guide — your specific tenancy may have
+          This checklist is a guide. Your specific tenancy may have
           additional requirements. Always check the inventory and any
           agent-specific check-out list before starting.
         </div>
@@ -227,7 +227,7 @@ export default function Page() {
           <p className="mt-4 text-lg text-ink-700">
             Check-out reports are remarkably consistent. The same rooms, the
             same items, the same overlooked details. Work through this list
-            properly — or hire someone who does — and you'll sidestep the
+            properly (or hire someone who does) and you'll sidestep the
             most common deposit deductions in the UK.
           </p>
         </div>
@@ -250,7 +250,7 @@ export default function Page() {
 
       <CTASection
         heading="Rather not scrub the oven yourself?"
-        body="We do this every day, in London, to agent-pass standard — trained cleaners, professional-grade kit, real five-star Google reviews. Send us a few details and we'll come back with a quote."
+        body="We do this every day, in London, to agent-pass standard, with trained cleaners, professional-grade kit, real five-star Google reviews. Send us a few details and we'll come back with a quote."
       />
     </>
   );

@@ -385,7 +385,7 @@ export default function Page() {
 
       <CTASection
         heading="Get an office cleaning quote, fast"
-        body="Tell us about your site and your hours and we'll come back with a clear per-visit quote. Every contract is agreed with you first — no automated bookings, no surprises."
+        body="Tell us about your site and your hours and we'll come back with a clear per-visit quote. Every contract is agreed with you first, so there are no automated bookings and no surprises."
       />
     </>
   );

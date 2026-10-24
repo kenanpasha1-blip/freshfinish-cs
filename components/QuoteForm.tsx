@@ -45,7 +45,7 @@ export default function QuoteForm() {
           <Icon name="check" size={24} />
         </div>
         <h3 className="mt-4 text-xl font-bold text-brand-900">
-          Thanks — we've got your enquiry
+          Thanks, we've got your enquiry
         </h3>
         <p className="mt-3 text-ink-700 max-w-md mx-auto leading-relaxed">
           We'll review the details and come back to you shortly to discuss
@@ -140,7 +140,7 @@ export default function QuoteForm() {
         />
       </label>
 
-      {/* Honeypot — bots fill it, humans don't see it */}
+      {/* Honeypot: bots fill it, humans don't see it */}
       <input
         type="text"
         name="company"
@@ -153,7 +153,7 @@ export default function QuoteForm() {
       <p className="text-xs text-ink-500 leading-relaxed">
         By submitting this form you agree for us to contact you about your
         enquiry. Bookings and quotes are reviewed and confirmed before they're
-        final — submitting this form doesn't confirm a booking.
+        final. Submitting this form doesn't confirm a booking.
       </p>
 
       <div className="flex flex-wrap gap-3 items-center">

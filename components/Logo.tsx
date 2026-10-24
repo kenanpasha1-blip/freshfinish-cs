@@ -45,7 +45,7 @@ export default function Logo({
 
   if (asStatic) return img;
   return (
-    <Link href="/" aria-label={`${site.name} — home`} className="inline-flex items-center">
+    <Link href="/" aria-label={`${site.name} home`} className="inline-flex items-center">
       {img}
     </Link>
   );

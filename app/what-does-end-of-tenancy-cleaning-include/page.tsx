@@ -15,7 +15,7 @@ const PATH = "/what-does-end-of-tenancy-cleaning-include";
 export const metadata: Metadata = buildMetadata({
   title: "What Does End of Tenancy Cleaning Include?",
   description:
-    "A proper room-by-room breakdown of what end of tenancy cleaning actually includes — for tenants, landlords and letting agents. Written to help you plan a check-out-ready clean.",
+    "A proper room-by-room breakdown of what end of tenancy cleaning actually includes, for tenants, landlords and letting agents. Written to help you plan a check-out-ready clean.",
   path: PATH,
 });
 
@@ -32,14 +32,14 @@ const sections: { title: string; intro: string; items: string[] }[] = [
       "Microwave cleaned inside and out; dishwasher filters and drawer",
       "Washing machine: drawer, rubber seal and door glass cleaned; visible mould/limescale treated",
       "Worktops, sink, taps, drainer: limescale and water marks removed",
-      "Inside and outside of all cupboards and drawers — top, sides, fronts and handles",
+      "Inside and outside of all cupboards and drawers: top, sides, fronts and handles",
       "Bins cleaned and deodorised; skirtings, radiators and floor finished",
     ],
   },
   {
     title: "Bathrooms and toilets",
     intro:
-      "Limescale is the main villain here. We treat it properly with the right products — not disguised with shine spray.",
+      "Limescale is the main villain here. We treat it properly with the right products, not disguised with shine spray.",
     items: [
       "Shower screen, tiles, grout and silicone: limescale, soap scum and mould treated",
       "Taps, showerheads and handles descaled and polished",
@@ -70,7 +70,7 @@ const sections: { title: string; intro: string; items: string[] }[] = [
     intro:
       "Usually quicker than kitchens and bathrooms, but the detail still matters for check-out.",
     items: [
-      "All surfaces, shelves and units — top, front and insides where empty",
+      "All surfaces, shelves and units: top, front and insides where empty",
       "Electronics and fittings carefully dusted",
       "Skirtings, radiators, doors, frames, sockets and switches",
       "Windows (interior), sills and frames cleaned",
@@ -92,7 +92,7 @@ const sections: { title: string; intro: string; items: string[] }[] = [
   },
   {
     title: "General / final checks",
-    intro: "The finishing pass — the difference between 'done' and 'done properly'.",
+    intro: "The finishing pass: the difference between 'done' and 'done properly'.",
     items: [
       "All bins emptied and bagged",
       "Internal glazing streak-checked in daylight",
@@ -106,8 +106,8 @@ const notIncluded = [
   "Professional carpet shampooing or steam cleaning (optional paid add-on, with receipt)",
   "External windows above ground floor (needs specialist reach-and-wash equipment)",
   "Balcony, patio or garden deep cleaning",
-  "Moving heavy furniture (wardrobes, sofas, beds) — for safety and to avoid damage",
-  "Painting over wall marks or filling holes — that's a decorator's job, not cleaning",
+  "Moving heavy furniture (wardrobes, sofas, beds), for safety and to avoid damage",
+  "Painting over wall marks or filling holes. That's a decorator's job, not cleaning",
   "Specialist mould remediation, pest control, or anything that legally needs a licensed trade",
 ];
 
@@ -132,7 +132,7 @@ export default function Page() {
       <PageHero
         eyebrow="Guide · End of tenancy"
         heading="What does end of tenancy cleaning include?"
-        intro="A proper end of tenancy clean is more than a tidy-up — it's the clean your landlord or letting agent actually checks against. Here's exactly what's covered in a professional job, room by room."
+        intro="A proper end of tenancy clean is more than a tidy-up. It's the clean your landlord or letting agent actually checks against. Here's exactly what's covered in a professional job, room by room."
         breadcrumbs={[
           { href: "/", label: "Home" },
           { href: "/end-of-tenancy-cleaning-london", label: "End of Tenancy" },
@@ -150,7 +150,7 @@ export default function Page() {
           </p>
           <p>
             This page breaks down the full scope of a professional end of
-            tenancy clean — the baseline any reputable cleaner should cover,
+            tenancy clean (the baseline any reputable cleaner should cover)
             and a few things that sit outside it. Use it to pressure-test
             quotes, write a move-out plan, or just to know what you're
             paying for.
@@ -200,7 +200,7 @@ export default function Page() {
           </h2>
           <p className="mt-3 text-lg text-ink-700">
             Transparency matters. These are the areas most commonly confused
-            or up-sold — we'll always tell you up front what's inside and
+            or up-sold, so we'll always tell you up front what's inside and
             outside scope.
           </p>
         </div>

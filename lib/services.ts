@@ -40,7 +40,7 @@ export const services: Service[] = [
     name: "Deep Cleaning",
     shortName: "Deep Clean",
     blurb:
-      "A full reset for homes that need more than a regular clean — kitchens, bathrooms and every corner.",
+      "A full reset for homes that need more than a regular clean: kitchens, bathrooms and every corner.",
     description:
       "Ideal before a new tenant moves in, after a long period without a proper clean, or whenever your home needs a proper reset.",
     hasPage: false,

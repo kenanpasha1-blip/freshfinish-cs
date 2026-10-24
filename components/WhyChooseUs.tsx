@@ -5,7 +5,7 @@ const points: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "shield-check",
     title: "Trained, professional team",
-    body: "Every clean is carried out by trained cleaners using professional-grade products and equipment — not a passing handyman with a generic spray bottle.",
+    body: "Every clean is carried out by trained cleaners using professional-grade products and equipment, not a passing handyman with a generic spray bottle.",
   },
   {
     icon: "star",
@@ -15,22 +15,22 @@ const points: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "check",
     title: "Priced per property, not per hour",
-    body: "For end of tenancy cleans, you pay for the outcome — a check-out-ready property — not the clock. No meters running, no surprise extras at the end.",
+    body: "For end of tenancy cleans, you pay for the outcome (a check-out-ready property), not the clock. No meters running, no surprise extras at the end.",
   },
   {
     icon: "map-pin",
     title: "London specialists",
-    body: "We focus on London first. That means we know the stock — ex-council flats, period conversions, new-builds — and we know what different letting agents look for.",
+    body: "We focus on London first. That means we know the stock (ex-council flats, period conversions, new-builds) and we know what different letting agents look for.",
   },
   {
     icon: "clock",
     title: "Reliable, on time",
-    body: "When we say we'll be there at 9am, we're there at 9am. Cleaning companies that turn up late cost tenants deposits — we treat your time like it matters, because it does.",
+    body: "When we say we'll be there at 9am, we're there at 9am. Cleaning companies that turn up late cost tenants deposits. We treat your time like it matters, because it does.",
   },
   {
     icon: "phone",
     title: "Easy to reach, quick to reply",
-    body: "Phone, email or WhatsApp — whichever's easiest. We aim to come back with a quote quickly so you can plan move-out day with confidence.",
+    body: "Phone, email or WhatsApp, whichever's easiest. We aim to come back with a quote quickly so you can plan move-out day with confidence.",
   },
 ];
 
