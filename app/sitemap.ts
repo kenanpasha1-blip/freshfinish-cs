@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
   }[] = [
     { path: "/", priority: 1.0, changeFrequency: "weekly" },
+    { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
     {
       path: "/office-cleaning",
       priority: 0.95,

@@ -165,6 +165,10 @@ export default function QuoteForm() {
           <p className="text-sm text-red-700">{errorMsg}</p>
         )}
       </div>
+      <p className="text-xs text-ink-500">
+        We use your details only to reply to this enquiry. See our{" "}
+        <a href="/privacy" className="underline">privacy policy</a>.
+      </p>
     </form>
   );
 }

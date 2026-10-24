@@ -123,6 +123,9 @@ export default function Footer() {
           <p className="text-xs text-brand-300">
             © {year} {site.legalName}. All rights reserved.
           </p>
+          <Link href="/privacy" className="text-xs text-brand-300 hover:text-white underline">
+            Privacy policy
+          </Link>
         </div>
       </div>
     </footer>
