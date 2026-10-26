@@ -21,10 +21,11 @@ import { site } from "@/lib/site";
 const PATH = "/school-cleaning";
 
 export const metadata: Metadata = buildMetadata({
-  title: "School Cleaning London | School Cleaning Contractors",
+  title: "Cleaning Company for Schools London | Fresh Finish",
   description:
-    "Contract school cleaning across London and Enfield. Worked around the school day, DBS-checked staff, fully insured, photo proof on every clean. Already trusted by a local school.",
+    "School cleaners for primary and secondary schools, academies and nurseries across London. DBS-checked staff, cleaned around the school day, photo proof every clean.",
   path: PATH,
+  suffix: false,
 });
 
 const includedAreas: { title: string; items: string[] }[] = [
@@ -90,8 +91,8 @@ export default function Page() {
 
       <PageHero
         eyebrow="School & education cleaning · London"
-        heading="School cleaning across London, built around the school day"
-        intro="Dependable term-time and holiday cleaning for schools, academies and education settings. We already hold a school cleaning contract, so we understand how to clean an education site properly, safely and around your timetable, with photo proof of every clean."
+        heading="A cleaning company for schools, built around the school day"
+        intro="Dependable term-time and holiday cleaning for primary and secondary schools, academies and nurseries across London. We already hold a school cleaning contract, so we understand how to clean an education site properly, safely and around your timetable, with photo proof of every clean."
         image={{
           src: "/images/school/classroom.jpg",
           alt: "A clean, tidy classroom ready for the school day",
@@ -249,6 +250,53 @@ export default function Page() {
               </Button>
             </div>
           </div>
+        </div>
+      </Section>
+
+      {/* School types */}
+      <Section tone="muted" id="school-types">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
+            Cleaners for every kind of school
+          </p>
+          <h2 className="mt-2 text-3xl md:text-4xl font-bold text-brand-900">
+            Primary, secondary, academies and nurseries
+          </h2>
+          <p className="mt-4 text-lg text-ink-700">
+            Each type of school asks something different of its cleaners. We
+            plan the specification and the schedule around how your site
+            actually runs.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          {[
+            {
+              title: "Primary schools",
+              body: "Low surfaces, shared resources and lots of small hands, so high-touch points and classroom resources get cleaned every day, not just the floors.",
+            },
+            {
+              title: "Secondary schools",
+              body: "Bigger sites with science labs, sports changing rooms, dining halls and heavy footfall in corridors. We size the team to the site and split the work so it is done before the next day starts.",
+            },
+            {
+              title: "Academies and multi-academy trusts",
+              body: "One standard and one point of contact across several sites, with every clean photographed and logged so the trust can see each school at a glance.",
+            },
+            {
+              title: "Nurseries and early years",
+              body: "Play areas, nappy change areas and toys need careful, safe cleaning. Products and methods agreed with you before we start.",
+            },
+          ].map((t) => (
+            <div
+              key={t.title}
+              className="rounded-2xl bg-white border border-surface-200 p-6"
+            >
+              <h3 className="text-lg font-semibold text-brand-900">{t.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-700">
+                {t.body}
+              </p>
+            </div>
+          ))}
         </div>
       </Section>
 

@@ -146,6 +146,12 @@ export const faqs: FAQ[] = [
       "Yes. We schedule daily cleaning around the school day and can carry out larger deep cleans during half-terms and holidays. We build the schedule around your timetable and site access.",
     collections: ["school"],
   },
+  {
+    question: "Do you clean secondary schools as well as primary schools?",
+    answer:
+      "Yes. We quote for primary and secondary schools, academies, multi-academy trusts and nurseries. Secondary sites usually need a bigger team for labs, changing rooms and dining halls, and we size the team and schedule to your site.",
+    collections: ["school"],
+  },
 ];
 
 export const getFAQs = (collection: FAQCollection) =>
