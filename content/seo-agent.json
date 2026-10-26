@@ -1,3 +1,41 @@
 {
-  "pages": {}
+  "pages": {
+    "/school-cleaning": {
+      "updatedAt": "2026-10-26T11:47:03.043Z",
+      "title": "School Cleaning London, Term Time & Holidays | Fresh Finish",
+      "description": "School cleaning in London for primary and secondary schools, academies and nurseries. DBS-checked staff, cleaning around the school day and photo proof.",
+      "sections": [
+        {
+          "heading": "How a school cleaning contract with us is set up",
+          "paragraphs": [
+            "We start with a free site survey so we can walk the building with you, look at access, timetable and the areas that matter most, then agree the full specification and schedule before anything is signed. Nothing is assumed, so you know exactly which rooms are cleaned, how often, and when the team will be on site.",
+            "Once the contract starts, daily cleaning runs around the school day and larger deep cleans are booked into half-terms and holidays. Every visit is checked in and out on site, and before-and-after photos go into your own portal, so you can see the standard without walking the building yourself.",
+            "If something is not right, flag it and it is put right on the very next clean. Insurance certificates and vetting details are shared on request, which keeps things simple when governors or auditors ask who is on site and how the work is evidenced."
+          ]
+        },
+        {
+          "heading": "What to check when comparing school cleaning contractors",
+          "paragraphs": [
+            "Ask who will actually be on site and how they are vetted. Our staff on school sites are DBS-checked and we are fully insured, and we work to the safeguarding expectations schools have for any contractor coming through the gate.",
+            "Ask how the standard is recorded. A contractor that photographs and logs every clean saves you chasing and gives business managers, bursars and trusts something concrete to show when the contract is reviewed.",
+            "Ask whether the specification is built around your site rather than a standard list. Primary classrooms, secondary labs and changing rooms, dining halls and nursery play areas all need different attention, and we size the team and the schedule to match how your site runs."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Which parts of London do you cover for school cleaning?",
+          "answer": "North London, North West London, Central London, East London, North East London and West London, including Enfield and the surrounding boroughs, plus selected parts of Hertfordshire and Essex such as Borehamwood, Watford, St Albans, Loughton, Chigwell and Romford. Send us your postcode and we will confirm."
+        },
+        {
+          "question": "What is included in your school cleaning service?",
+          "answer": "Classrooms and learning spaces, washrooms and toilets, halls, dining areas and corridors, offices, reception and staff rooms, plus holiday and half-term deep cleans and one-off cleans for events and open days. Tell us anything else your site needs and we will confirm what we can include in the quote."
+        },
+        {
+          "question": "How do we get a quote for school cleaning?",
+          "answer": "Call 020 3927 4499, message us on WhatsApp or request a quote online with details of your site, timetable and the areas you need covered. We can book a free site survey and come back with a clear proposal."
+        }
+      ]
+    }
+  }
 }
