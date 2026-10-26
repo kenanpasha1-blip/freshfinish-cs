@@ -12,6 +12,7 @@ const serif = Fraunces({
 });
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AgentExtras from "@/components/AgentExtras";
 import StructuredData from "@/components/StructuredData";
 import { Analytics } from "@vercel/analytics/next";
 import { TrafficBeacon } from "@/components/TrafficBeacon";
@@ -86,7 +87,10 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <StructuredData data={localBusinessJsonLd()} />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          {children}
+          <AgentExtras />
+        </main>
         <Footer />
         <Analytics />
         <TrafficBeacon />

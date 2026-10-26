@@ -1,3 +1,4 @@
+import { agentPage } from "@/lib/seo-agent-content";
 import type { Metadata } from "next";
 import { site } from "./site";
 
@@ -18,7 +19,10 @@ export function buildMetadata({
   suffix = true,
   image = "/og-default.jpg",
 }: BuildMetaArgs): Metadata {
-  const fullTitle = suffix ? `${title} | ${site.name}` : title;
+  // The SEO agent's wording, when it has rewritten this page, wins.
+  const agent = agentPage(path);
+  const fullTitle = agent?.title ?? (suffix ? `${title} | ${site.name}` : title);
+  if (agent?.description) description = agent.description;
   const url = `${site.url}${path}`;
 
   return {
