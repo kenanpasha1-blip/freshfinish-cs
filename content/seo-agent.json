@@ -36,6 +36,43 @@
           "answer": "Call 020 3927 4499, message us on WhatsApp or request a quote online with details of your site, timetable and the areas you need covered. We can book a free site survey and come back with a clear proposal."
         }
       ]
+    },
+    "/office-cleaning/essex": {
+      "updatedAt": "2026-10-27T08:00:53.752Z",
+      "title": "Office Cleaning Essex | Contract Cleaners | Fresh Finish",
+      "description": "Office cleaning in Essex for businesses, managing agents and serviced offices in Loughton, Chigwell, Romford and Epping. Free site survey and fixed price.",
+      "sections": [
+        {
+          "heading": "Which parts of Essex we cover for office cleaning",
+          "paragraphs": [
+            "Our Essex office cleaning covers selected areas close to the London border: Loughton, Chigwell, Romford, Ilford and Epping, along with the IG1, IG7, IG10, RM1 and CM16 postcodes. That includes town centre offices, business units and shared workspaces.",
+            "If your office is further out in Essex, for example Chelmsford, Brentwood or Saffron Walden, those towns are not on our covered list. Call 020 3927 4499 and we will tell you straight away whether we can help, rather than leaving you waiting.",
+            "If you sit just outside the postcodes above but near one of the towns we clean, it is still worth asking. We will be clear about what we can and cannot take on."
+          ]
+        },
+        {
+          "heading": "Contract cleaning in Essex for offices, serviced sites and managing agents",
+          "paragraphs": [
+            "Contract cleaning means a written specification rather than an open-ended hourly arrangement. We agree every area, task and frequency with you, covering desks and touch points, kitchens and tea points, washrooms, meeting rooms, floors and bins, then hold a fixed price after the free site survey.",
+            "We work with businesses, managing agents and serviced offices, so one point of contact matters. Your contract is run by one named account manager who knows the building and answers the phone, and reviews happen regularly rather than only when something goes wrong.",
+            "For landlords and agents reporting to tenants, every visit is time-stamped as cleaners check in and out on site, and before and after photos land in your client portal next to the invoice. Teams are DBS-checked and fully insured, with teams available for sensitive sites."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you cover Chelmsford, Brentwood or Saffron Walden?",
+          "answer": "Those towns are not among the Essex areas we list. We clean offices in and around Loughton, Chigwell, Romford, Ilford and Epping, and the IG1, IG7, IG10, RM1 and CM16 postcodes. Call 020 3927 4499 and we will confirm either way."
+        },
+        {
+          "question": "What is the difference between office cleaning and contract cleaning?",
+          "answer": "Contract cleaning is a regular schedule set out in a written specification, with every area, task and frequency agreed up front and a fixed price after a free site survey."
+        },
+        {
+          "question": "Do you clean serviced offices and shared workspaces in Essex?",
+          "answer": "Yes. We clean offices for businesses, managing agents and serviced offices, including town centre offices, business units and shared workspaces in the Essex areas we cover."
+        }
+      ]
     }
   }
 }
