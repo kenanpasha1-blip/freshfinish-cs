@@ -73,6 +73,43 @@
           "answer": "Yes. We clean offices for businesses, managing agents and serviced offices, including town centre offices, business units and shared workspaces in the Essex areas we cover."
         }
       ]
+    },
+    "/office-cleaning/north-west-london": {
+      "updatedAt": "2026-10-28T08:00:47.647Z",
+      "title": "Office Cleaning Hampstead & North West London | Fresh Finish",
+      "description": "Contract office cleaning in Hampstead and across North West London, with one named account manager, photo reports every visit and a fixed price.",
+      "sections": [
+        {
+          "heading": "Office cleaning across NW2, NW3 and the surrounding postcodes",
+          "paragraphs": [
+            "Our North West London cleaning covers NW2, NW3, NW6, NW8 and NW10, so offices in Hampstead, St John's Wood, Kilburn and Willesden are all on the same routes. Professional practices in Hampstead and St John's Wood often need quieter, out of hours visits, and that is how we usually work.",
+            "The HA0, HA1 and HA9 postcodes take in Wembley and Harrow, where a lot of the space is serviced or shared workspace. We write the specification around how the building is actually used, including the open plan areas and the smaller private rooms.",
+            "If your office is near these postcodes but not named here, call 020 3927 4499 and we will tell you straight away whether we cover it."
+          ]
+        },
+        {
+          "heading": "Offices outside North West London",
+          "paragraphs": [
+            "Plenty of businesses looking for office cleaning in this part of London have a second site elsewhere. We also clean offices in North London, including Islington, Camden and Highgate, and in Central London, including Marylebone, Fitzrovia and Soho.",
+            "Further out, we cover West London around Notting Hill, Kensington and Chiswick, East London around Shoreditch, Hackney and Bethnal Green, and North East London around Stoke Newington, Dalston and Walthamstow. Hertfordshire sites in Borehamwood, Watford and St Albans are covered too, along with Essex locations such as Loughton, Chigwell and Romford.",
+            "Multiple sites can run on the same written specification and the same reporting, so you see every visit logged and photographed in one client portal."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you clean serviced offices and shared workspaces?",
+          "answer": "Yes. We clean serviced and shared workspaces, including sites around Wembley and Harrow, as well as professional practices and business units along the North Circular."
+        },
+        {
+          "question": "What is included in an office cleaning contract?",
+          "answer": "We agree a written specification covering desks and touch points, kitchens and tea points, washrooms, meeting rooms, floors and bins, and how often each area is cleaned."
+        },
+        {
+          "question": "How do we get a price for our office?",
+          "answer": "Book a free site survey. We walk the building with you, write down every area, task and frequency, then send a fixed price with no hourly surprises. Call 020 3927 4499 to arrange it."
+        }
+      ]
     }
   }
 }
