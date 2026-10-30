@@ -110,6 +110,43 @@
           "answer": "Book a free site survey. We walk the building with you, write down every area, task and frequency, then send a fixed price with no hourly surprises. Call 020 3927 4499 to arrange it."
         }
       ]
+    },
+    "/office-cleaning/north-london": {
+      "updatedAt": "2026-10-30T08:00:49.690Z",
+      "title": "Office Cleaning in Islington, North London | Fresh Finish",
+      "description": "Contract office cleaning in Islington and across North London. Every visit logged and photographed, with a fixed price after a free site survey.",
+      "sections": [
+        {
+          "heading": "Commercial cleaning for multi-tenant buildings and managing agents in North London",
+          "paragraphs": [
+            "A lot of commercial cleaning in North London is not one office on one floor. It is a converted warehouse near King's Cross with several tenants, or a building on a Finchley or Crouch End high street where the shared entrance, stairs and kitchens are used by everyone. Those shared areas are usually the first thing a visitor notices.",
+            "We write the shared areas into the specification alongside the office floors, so there is no argument later about what is included. Every area, task and frequency is agreed in writing, and the price is fixed after the free site survey.",
+            "Managing agents and serviced office operators get the same reporting as a single tenant. One named account manager runs the contract, cleaners check in and out on site, and before and after photos land in your client portal with every invoice."
+          ]
+        },
+        {
+          "heading": "Contract office cleaners for Islington, Tufnell Park and the surrounding postcodes",
+          "paragraphs": [
+            "Our North London office cleaning contracts cover N1, N4, N5, N6, N7, N8, N10, N19, NW1, NW5, which takes in Islington, Camden, Highgate, Finchley, Muswell Hill, Crouch End and the streets around Tufnell Park.",
+            "Most of this work happens early in the morning or in the evening, so your team arrives to a clean office and nobody is cleaning around a meeting. The same trained, DBS-checked team works your building to the same schedule rather than a different face each week.",
+            "If your office sits just outside the postcodes listed, for example towards Clerkenwell or along Euston Road, call 020 3927 4499 and we will tell you straight away whether we cover it."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you cover office cleaning in Tufnell Park and the N7 and N19 postcodes?",
+          "answer": "Yes. Our North London contracts cover N1, N4, N5, N6, N7, N8, N10, N19, NW1 and NW5, which includes the Tufnell Park area."
+        },
+        {
+          "question": "Do you clean shared entrances, stairs and kitchens in multi-tenant buildings?",
+          "answer": "Yes. Shared areas can be written into the specification alongside the office floors, with the frequency for each area agreed in writing before we start."
+        },
+        {
+          "question": "My office is near Euston Road or Clerkenwell. Can you still quote?",
+          "answer": "Call 020 3927 4499 and tell us where you are. If your office is nearby but not on our listed areas, we will tell you straight away whether we can cover it."
+        }
+      ]
     }
   }
 }
