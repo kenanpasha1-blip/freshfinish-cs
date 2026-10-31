@@ -147,6 +147,43 @@
           "answer": "Call 020 3927 4499 and tell us where you are. If your office is nearby but not on our listed areas, we will tell you straight away whether we can cover it."
         }
       ]
+    },
+    "/office-cleaning/north-east-london": {
+      "updatedAt": "2026-10-31T08:00:47.945Z",
+      "title": "Office Cleaning North East London | Fresh Finish",
+      "description": "Contract office cleaning in North East London, covering Stoke Newington, Dalston, Walthamstow, Leyton and Tottenham. Free site survey and fixed price.",
+      "sections": [
+        {
+          "heading": "Commercial and contract cleaning for East London workplaces",
+          "paragraphs": [
+            "We hold contract cleaning agreements with businesses, managing agents and serviced offices across North East London. Each one starts with a written specification that sets out every area, every task and how often it is done, so nobody is left guessing what the cleaners are responsible for.",
+            "The price is fixed once we have walked the building with you at the free site survey, so there are no hourly surprises on the invoice. Teams are DBS-checked and fully insured, with certificates available on request and teams for sensitive sites where that is needed.",
+            "Day to day, one named account manager runs your contract. They know your building, they answer the phone, and they sit down with you for a regular review once the clean is up and running."
+          ]
+        },
+        {
+          "heading": "Office cleaning in Stoke Newington, Dalston and nearby postcodes",
+          "paragraphs": [
+            "We cover Stoke Newington, Dalston, Walthamstow, Leyton and Tottenham, taking in the N15, N16, N17, E5, E10 and E17 postcode areas. Many of these workplaces are small and mid-sized businesses, community buildings and creative workspaces in converted or mixed-use buildings, so the schedule is built around how your space is actually used.",
+            "Most of the cleaning happens early in the morning or in the evening, so your team arrives to a clean office and the working day carries on as normal. Cleaners check in and out on site and photos arrive in your client portal after every visit, which means you can check the work without being there.",
+            "If your office is in Shoreditch, Hackney or Bethnal Green, those areas are handled on our East London page. If you are nearby and not sure which team covers you, call 020 3927 4499 and we will tell you straight away."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you clean offices in Shoreditch, Hackney or Bethnal Green?",
+          "answer": "Those areas are covered by our East London office cleaning page rather than this one. Call 020 3927 4499 and we will point you to the right team."
+        },
+        {
+          "question": "Do you work with managing agents and serviced offices?",
+          "answer": "Yes. We run contract cleaning for businesses, managing agents and serviced offices in North East London, each with a written specification and one named account manager."
+        },
+        {
+          "question": "How often will you clean our office?",
+          "answer": "The frequency for each area is agreed in your specification at the site survey, then the same trained team works to that schedule, with every visit logged and photographed."
+        }
+      ]
     }
   }
 }
