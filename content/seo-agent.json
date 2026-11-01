@@ -184,6 +184,43 @@
           "answer": "The frequency for each area is agreed in your specification at the site survey, then the same trained team works to that schedule, with every visit logged and photographed."
         }
       ]
+    },
+    "/end-of-tenancy-cleaning/west-london": {
+      "updatedAt": "2026-11-01T08:01:07.913Z",
+      "title": "End of Tenancy Cleaning Notting Hill | Fresh Finish",
+      "description": "End of tenancy cleaning in Notting Hill and West London, for tenants, landlords and letting agents. Fixed prices from £120 and photos of every room.",
+      "sections": [
+        {
+          "heading": "Notting Hill, Kensington and the rest of our West London coverage",
+          "paragraphs": [
+            "Most of our West London move out cleans are in Notting Hill and Kensington, where stucco fronted flats and mansion blocks tend to be checked closely at inventory. We also clean family houses in Chiswick and Ealing, and flats in Shepherd's Bush.",
+            "The postcodes we cover in West London are W2, W4, W5, W8, W11, W12 and W14, so if your checkout address falls in one of those, we can quote it. Prices are the same across the area and are set by property size, not by postcode.",
+            "If your property sits outside West London, we have separate pages for North West London, covering Hampstead, St John's Wood and Kilburn, as well as North London, Central London, East London, North East London, Hertfordshire and Essex."
+          ]
+        },
+        {
+          "heading": "Getting through checkout without a deposit dispute",
+          "paragraphs": [
+            "Checkout usually comes down to what the inventory clerk can see against the check in report. Our clean follows the inventory and checkout standard, covering the kitchen and appliances, bathrooms and limescale, inside cupboards and wardrobes, skirting boards, doors and switches, windows and sills, and floors throughout.",
+            "Every room is photographed before and after, and those photos are saved in your portal. If there is a disagreement later, we can send the tenant, landlord or agent a link to the before and after photos rather than asking anyone to take our word for it.",
+            "Two things are worth checking before the day. The property needs to be clear of all personal items so the team can work through it properly, and white goods are not part of the standard clean, so add the white goods deep clean at £55 if your tenancy agreement asks for the oven, fridge freezer, washing machine and tumble dryer."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you cover West Kensington and the W14 area?",
+          "answer": "Yes. W14 is one of the West London postcodes we cover, along with W2, W4, W5, W8, W11 and W12."
+        },
+        {
+          "question": "Do you also do end of tenancy cleaning in North West London?",
+          "answer": "Yes, that is handled on our North West London page, which covers Hampstead, St John's Wood and Kilburn."
+        },
+        {
+          "question": "Is the oven included in the price?",
+          "answer": "No. White goods are not part of the standard clean. The white goods deep clean is £55 and covers the oven, fridge freezer, washing machine and tumble dryer."
+        }
+      ]
     }
   }
 }
