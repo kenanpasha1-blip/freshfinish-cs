@@ -221,6 +221,43 @@
           "answer": "No. White goods are not part of the standard clean. The white goods deep clean is £55 and covers the oven, fridge freezer, washing machine and tumble dryer."
         }
       ]
+    },
+    "/end-of-tenancy-cleaning/north-london": {
+      "updatedAt": "2026-11-02T08:01:00.187Z",
+      "title": "End of Tenancy Cleaning North London | Fresh Finish",
+      "description": "End of tenancy cleaning in North London for tenants, landlords and agents. Fixed prices from £120, before and after photos of every room.",
+      "sections": [
+        {
+          "heading": "Which North London postcodes we cover",
+          "paragraphs": [
+            "We book move out cleans across the N1, N4, N5, N6, N7, N8, N10, N19, NW1 and NW5 postcode areas, which take in Islington, Camden, Highgate, Finchley, Muswell Hill and Crouch End.",
+            "If you are not sure which postcode area your street sits in, read it off the tenancy agreement or the checkout appointment and call us on 020 3927 4499. We will confirm whether the address is in the area we cover before you book, rather than leaving you guessing.",
+            "For addresses outside North London, we also run end of tenancy cleaning in North West London, Central London, East London, North East London, West London, Hertfordshire and Essex, so it is worth asking if your move takes you across the city."
+          ]
+        },
+        {
+          "heading": "Getting your deposit back at checkout",
+          "paragraphs": [
+            "Most deposit disputes come down to what can be proved. Every room we clean is photographed before and after and saved in your portal, and we can send your landlord or letting agent a link to those photos, so the condition the property was left in is on record.",
+            "Book the clean for after the removal van has gone. The property needs to be clear of all personal items when our team arrives, which lets us get inside cupboards and wardrobes, along the skirting boards and around windows and sills without working around boxes.",
+            "Check the inventory before you book so you know what is being assessed. If the oven, fridge freezer, washing machine or tumble dryer are listed, add the white goods deep clean, and add carpet cleaning per room where carpets are mentioned. If anything is flagged at checkout, tell us within 48 hours and we come back and put it right."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you cover areas like North Finchley, Friern Barnet or Hornsey?",
+          "answer": "The postcodes we list for North London are N1, N4, N5, N6, N7, N8, N10, N19, NW1 and NW5. Call 020 3927 4499 with the full address and we will confirm whether it falls inside the area we cover."
+        },
+        {
+          "question": "Are ovens and carpets included in the end of tenancy price?",
+          "answer": "No. White goods are not part of the standard clean. The white goods deep clean covers the oven, fridge freezer, washing machine and tumble dryer for £55, and carpet deep cleaning is £80 per room."
+        },
+        {
+          "question": "Can my letting agent see the cleaning photos?",
+          "answer": "Yes. Before and after photos of every room are saved in your portal, and we can send the tenant or landlord a link to them on request."
+        }
+      ]
     }
   }
 }
