@@ -258,6 +258,43 @@
           "answer": "Yes. Before and after photos of every room are saved in your portal, and we can send the tenant or landlord a link to them on request."
         }
       ]
+    },
+    "/end-of-tenancy-cleaning/essex": {
+      "updatedAt": "2026-11-03T08:00:51.788Z",
+      "title": "End of Tenancy Cleaning Essex, Fixed Prices | Fresh Finish",
+      "description": "End of tenancy cleaning in selected parts of Essex, including Loughton, Chigwell, Romford and Ilford. Fixed prices from £120, every room photographed.",
+      "sections": [
+        {
+          "heading": "Which parts of Essex we clean",
+          "paragraphs": [
+            "We take end of tenancy work in selected parts of Essex, around Loughton, Chigwell, Romford, Ilford and Epping. The postcodes we cover include IG1, IG7, IG10, RM1 and CM16, which takes in flats, family houses and larger detached homes let through local agents.",
+            "Much of this work sits along the Central line and the A12 corridor, so moves and checkouts are often booked back to back on the same day by the same agent.",
+            "If your property is outside the postcodes listed above, call 020 3927 4499 before you book and we will tell you whether it is somewhere we clean rather than leave you guessing."
+          ]
+        },
+        {
+          "heading": "Working out your end of tenancy cleaning price in Essex",
+          "paragraphs": [
+            "Prices are set by property size and whether it is a flat or a house, starting at £120 for a studio and rising through one, two, three and four bedrooms. Houses of five bedrooms or more, and large or luxury homes, are confirmed after we have seen the property.",
+            "One bathroom is included in every price, and each extra bathroom is £20. White goods are not part of the standard clean, so if the oven, fridge freezer, washing machine or tumble dryer need doing, add the white goods deep clean at £55. Carpet deep cleaning is £80 per room.",
+            "Every price shown is a starting price. You can put your property details into the online calculator to get your exact figure, or call us and we will quote the same day."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Which Essex postcodes do you cover for end of tenancy cleaning?",
+          "answer": "We cover selected parts of Essex, including IG1, IG7, IG10, RM1 and CM16, around Loughton, Chigwell, Romford, Ilford and Epping. If your postcode is not on that list, call 020 3927 4499 and we will check."
+        },
+        {
+          "question": "Is the oven included in the end of tenancy cleaning price?",
+          "answer": "No. White goods are not part of the standard clean. The white goods deep clean covers the oven, fridge freezer, washing machine and tumble dryer for £55."
+        },
+        {
+          "question": "Can letting agents see the work before checkout?",
+          "answer": "Yes. Every room is photographed before and after, and the job is saved in the agent's own portal. We can also send the tenant or landlord a link to every before and after photo."
+        }
+      ]
     }
   }
 }
