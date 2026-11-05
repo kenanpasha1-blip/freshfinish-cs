@@ -126,6 +126,9 @@ export default function Footer() {
           <Link href="/privacy" className="text-xs text-brand-300 hover:text-white underline">
             Privacy policy
           </Link>
+          <a href="https://integraite-ai.com" target="_blank" rel="noopener" className="text-xs text-brand-300 hover:text-white">
+            Website by Integraite
+          </a>
         </div>
       </div>
     </footer>
