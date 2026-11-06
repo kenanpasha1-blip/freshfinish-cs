@@ -332,6 +332,43 @@
           "answer": "Yes. We clean business park units, town centre offices and serviced business centres in Hertfordshire for businesses, managing agents and serviced office operators, with photo reports and invoices in your client portal."
         }
       ]
+    },
+    "/office-cleaning/west-london": {
+      "updatedAt": "2026-11-06T08:00:49.572Z",
+      "title": "Office Cleaning Notting Hill & Kensington | Fresh Finish",
+      "description": "Contract office cleaning in Notting Hill, Kensington and Chiswick for offices and serviced buildings. Out of hours teams, photo report after every clean.",
+      "sections": [
+        {
+          "heading": "Office cleaning in Notting Hill and Kensington",
+          "paragraphs": [
+            "Offices in Notting Hill and Kensington are often professional practices in period buildings with listed features, so the cleaning has to be worked out room by room rather than applied from a standard list. We walk the building with you first and write down every area, task and frequency before quoting.",
+            "Cleaning is done out of hours, early in the morning or in the evening, so reception areas, meeting rooms, kitchens and washrooms are ready before your team arrives. The same trained, DBS-checked cleaners come back on the same schedule.",
+            "Notting Hill and Kensington offices sit in the W8 and W11 postcodes we cover. If your address is nearby and not listed, call 020 3927 4499 and we will tell you straight away."
+          ]
+        },
+        {
+          "heading": "Office cleaning in Chiswick and West Kensington",
+          "paragraphs": [
+            "Chiswick and West Kensington cover W4 and W14, including media and creative businesses, serviced offices and buildings run by managing agents. We agree a written specification for each site so everyone knows what is cleaned and how often.",
+            "Every clean is recorded. Cleaners check in and out on site, so each visit is time-stamped, and before and after photos arrive in your client portal alongside the invoice.",
+            "One named account manager runs the contract, knows the building and answers the phone, so you are not passed around when something needs changing."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you clean offices in West Kensington?",
+          "answer": "Yes. West Kensington falls in W14, one of the postcodes we cover, along with W2, W4, W5, W8, W11 and W12."
+        },
+        {
+          "question": "Do you work with serviced offices and managing agents in Kensington and Chiswick?",
+          "answer": "Yes. We hold contracts with businesses, managing agents and serviced offices across the area, each with its own written specification and fixed price."
+        },
+        {
+          "question": "What is included in the specification for a Chiswick office?",
+          "answer": "We agree it with you in writing before we start. It normally covers desks and touch points, kitchens and tea points, washrooms, meeting rooms, floors and bins, with the frequency set out for each."
+        }
+      ]
     }
   }
 }
