@@ -369,6 +369,43 @@
           "answer": "We agree it with you in writing before we start. It normally covers desks and touch points, kitchens and tea points, washrooms, meeting rooms, floors and bins, with the frequency set out for each."
         }
       ]
+    },
+    "/office-cleaning/central-london": {
+      "updatedAt": "2026-11-07T08:01:01.270Z",
+      "title": "Office Cleaning Marylebone & Central London | Fresh Finish",
+      "description": "Contract office cleaning in Central London, covering Marylebone, Fitzrovia, Soho and Westminster. Out of hours teams, every visit logged and photographed.",
+      "sections": [
+        {
+          "heading": "Office building and office block cleaning in Central London",
+          "paragraphs": [
+            "Whole buildings and office blocks need a different plan to a single suite. We write the specification floor by floor, setting out the desks and touch points, kitchens and tea points, washrooms, meeting rooms, floors and bins that are cleaned, and how often each one is done.",
+            "Central London buildings come with their own rules, so we work around building management requirements, access fobs and shared lifts, and clean out of hours so tenants and staff are not disrupted. Cleaners check in and out on site, so you can see exactly when each floor was covered.",
+            "We cover offices across W1, WC1, WC2, SW1 and EC1, including Marylebone, Fitzrovia, Soho, Westminster and Mayfair. If your building sits just outside those postcodes, call 020 3927 4499 and we will tell you straight away."
+          ]
+        },
+        {
+          "heading": "Changing office cleaning contractor in Central London",
+          "paragraphs": [
+            "Most moves start with the same worry: will the new team be as reliable as promised. We begin with a free site survey, walk the building with you, and write down every area, task and frequency at a fixed price, so there is nothing vague to argue about later.",
+            "Before day one the team is vetted, briefed and trained on your site, and one named account manager runs the contract and answers the phone. After that you get before and after photos in your client portal after every clean, alongside each invoice, and a regular review.",
+            "If a contract changes hands, the cleaners already on site normally move across with it, so businesses, managing agents and serviced office operators can keep the people they know and add the reporting on top."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do you clean whole office buildings as well as single offices?",
+          "answer": "Yes. We clean offices and office buildings in Central London, with a written specification covering each area and how often it is cleaned, agreed after a free site survey."
+        },
+        {
+          "question": "Can you work around our building management rules and access fobs?",
+          "answer": "Yes. Central London offices often have building management rules, access fobs and shared lifts, and we plan the schedule and access around them so cleaning happens out of hours."
+        },
+        {
+          "question": "Do you work with managing agents and serviced offices?",
+          "answer": "Yes. We provide contract office cleaning for businesses, managing agents and serviced offices, with one named account manager and a photo report after every clean."
+        }
+      ]
     }
   }
 }
